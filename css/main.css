@@ -36,13 +36,66 @@ body {
   height: 100vh;
   background: rgba(0, 0, 0, 1);
   z-index: 9999;
-  color: white;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #intro h1 {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 55px;
+  font-size: 80px;
+  letter-spacing: 10px;
+  font-weight: 700;
+  opacity: 0;
+  animation: fadeUp 1.5s forwards;
+}
+
+#intro p {
+  margin-top: 300px;
+  letter-spacing: 5px;
+  font-size: 13px;
+  opacity: 0;
+  animation: fadeUp 1.5s forwards;
+  animation-delay: 0.7s;
+}
+
+.enter_btn {
+  margin-top: 500px;
+
+  background: none;
+  border: none;
+
+  color: white;
+
+  letter-spacing: 4px;
+  font-size: 14px;
+
+  position: relative;
+  padding: 10px;
+
+  opacity: 0;
+  animation: fadeUp 1.5s forwards;
+  animation-delay: 1.4s;
+
+  transition: 0.5s;
+}
+
+.enter_btn:hover {
+  color: black;
+  background: #fff;
+  transition: 0.5s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
