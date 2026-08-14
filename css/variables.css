@@ -1,0 +1,59 @@
+:root {
+  /* ==============================
+     Color
+  ============================== */
+
+  --color-black: #000;
+  --color-white: #fff;
+  --color-text: #111;
+  --color-gray: #f5f5f5;
+  --color-border: #ddd;
+
+  /* ==============================
+     Background
+  ============================== */
+
+  --bg-primary: var(--color-white);
+  --bg-dark: var(--color-black);
+  --bg-hover: var(--color-white);
+
+  /* ==============================
+     Text
+  ============================== */
+
+  --text-primary: var(--color-black);
+  --text-light: var(--color-white);
+  --text-secondary: #666;
+
+  /* ==============================
+     Transition
+  ============================== */
+
+  --transition-fast: 0.3s ease;
+  --transition-normal: 0.5s ease;
+  --transition-slow: 0.8s ease;
+
+  /* ==============================
+     Animation
+  ============================== */
+
+  --animation-duration: 1.5s;
+
+  --animation-delay-1: 0.7s;
+  --animation-delay-2: 1.4s;
+
+  /* ==============================
+     Layout
+  ============================== */
+
+  --header-height: 80px;
+  --max-width: 1440px;
+
+  /* ==============================
+     Z-index
+  ============================== */
+
+  --z-header: 1000;
+  --z-modal: 9000;
+  --z-intro: 9999;
+}
