@@ -6,7 +6,7 @@
   height: 100vh;
 
   background: var(--bg-dark);
-  color: var(--text-light);
+  color: var(--text-gold);
 
   z-index: var(--z-intro);
 
@@ -33,25 +33,13 @@
   animation: fadeUp var(--animation-duration) forwards;
 }
 
-#intro p {
-  margin-top: 300px;
-
-  letter-spacing: 5px;
-  font-size: 13px;
-
-  opacity: 0;
-
-  animation: fadeUp var(--animation-duration) forwards;
-  animation-delay: var(--animation-delay-1);
-}
-
 .enter_btn {
   margin-top: 500px;
 
   background: none;
   border: none;
 
-  color: var(--color-white);
+  color: var(--text-gold);
 
   letter-spacing: 4px;
   font-size: 14px;
