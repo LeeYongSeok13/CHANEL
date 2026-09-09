@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="./css/responsive.css" />
   </head>
   <body>
+    <input type="checkbox" id="nav_menu_toggle" class="nav_menu_toggle_input" aria-label="모바일 메뉴" aria-controls="mobile_navigation" />
+
     <!-- 인트로 -->
     <div id="intro">
       <h1>CHANEL</h1>
@@ -28,10 +30,68 @@
       </button>
     </div>
 
-    <!-- header -->
+    <!-- 헤더 영역 -->
     <header id="header">
+      <div class="header_inner container">
+        <label for="nav_menu_toggle" class="mobile_nav_toggle">
+          <span class="visually_hidden">모바일 메뉴 열기/닫기</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
 
+        <!-- 로고 -->
+        <h1 class="logo">
+          <a href="./index.html">CHANEL</a>
+        </h1>
+
+        <!-- 유틸리티 메뉴 -->
+        <div class="header_util">
+          <button class="util_btn search_btn" aria-label="검색">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <button class="util_btn login_btn" aria-label="로그인">
+            <i class="fa-regular fa-user"></i>
+          </button>
+          <button class="util_btn favorite_btn" aria-label="즐겨찾기">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+          <button class="util_btn cart_btn" aria-label="장바구니">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </button>
+        </div>
+      </div>
     </header>
+
+    <nav class="main_nav" aria-label="메인 네비게이션">
+      <div class="nav_inner container">
+        <ul class="nav_list">
+          <li><a href="#">패션</a></li>
+          <li><a href="#">주얼리</a></li>
+          <li><a href="#">워치</a></li>
+          <li><a href="#">아이웨어</a></li>
+          <li><a href="#">향수</a></li>
+          <li><a href="#">메이크업</a></li>
+          <li><a href="#">스킨케어</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="mobile_navigation" class="mobile_drawer_nav" aria-label="모바일 네비게이션">
+      <div class="nav_inner container">
+        <ul class="mobile_nav_list">
+          <li><a href="#">패션</a></li>
+          <li><a href="#">주얼리</a></li>
+          <li><a href="#">워치</a></li>
+          <li><a href="#">아이웨어</a></li>
+          <li><a href="#">향수</a></li>
+          <li><a href="#">메이크업</a></li>
+          <li><a href="#">스킨케어</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <label for="nav_menu_toggle" class="nav_overlay"><span class="visually_hidden">메뉴 닫기</span></label>
 
     <!-- 메인 wrap -->
     <main id="main_wrap">
@@ -40,6 +100,7 @@
 
     <!-- js -->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://kit.fontawesome.com/1f1be3aed3.js" crossorigin="anonymous"></script>
     <script src="./js/navigation.js"></script>
     <script src="./js/main.js"></script>
   </body>

@@ -1,0 +1,141 @@
+#header {
+  position: relative;
+
+  width: 100%;
+  height: 80px;
+
+  background: var(--color-white);
+}
+
+.header_inner {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+/* 로고 */
+.logo {
+  position: absolute;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+/* 유틸리티 메뉴 */
+.header_util {
+  position: absolute;
+
+  right: 40px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 24px;
+}
+
+/* 아이콘 버튼 */
+.util_btn {
+  border: none;
+  background: none;
+
+  font-size: 1.125rem;
+
+  color: var(--color-black);
+
+  cursor: pointer;
+
+  transition: color var(--transition-normal);
+}
+
+.util_btn:hover {
+  color: var(--color-gold);
+}
+
+/* 메인 네비게이션 */
+.main_nav {
+  width: 100%;
+
+  background: var(--color-white);
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.nav_inner {
+  width: 100%;
+}
+
+.nav_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 32px;
+  min-height: 54px;
+}
+
+.nav_list li {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_list a {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px 2px 15px;
+
+  font-size: 0.92rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--color-black);
+
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.nav_list a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+
+  width: 100%;
+  height: 2px;
+
+  background: var(--color-gold);
+
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  opacity: 0;
+
+  transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.nav_list a:hover::after,
+.nav_list a:focus-visible::after {
+  transform: translateX(-50%) scaleX(1);
+  opacity: 1;
+}
+
+.nav_list a:hover,
+.nav_list a:focus-visible {
+  color: var(--color-gold);
+}
