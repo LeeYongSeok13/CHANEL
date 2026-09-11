@@ -1,34 +1,3 @@
-.nav_menu_toggle_input {
-  display: none;
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.mobile_nav_toggle {
-  display: none;
-}
-
-.nav_overlay {
-  display: none;
-}
-
-.mobile_drawer_nav {
-  display: none;
-}
-
-.nav_menu_toggle_input:checked ~ #header .mobile_nav_toggle span:nth-child(2) {
-  transform: translateY(6px) rotate(45deg);
-}
-
-.nav_menu_toggle_input:checked ~ #header .mobile_nav_toggle span:nth-child(3) {
-  opacity: 0;
-}
-
-.nav_menu_toggle_input:checked ~ #header .mobile_nav_toggle span:nth-child(4) {
-  transform: translateY(-6px) rotate(-45deg);
-}
-
 @media (max-width: 768px) {
   .nav_menu_toggle_input {
     display: block;
@@ -39,8 +8,8 @@
     outline-offset: 4px;
   }
 
-  #header {
-    height: 72px;
+  :root {
+    --header-height: 72px;
   }
 
   .header_inner {
@@ -76,7 +45,7 @@
 
     transform: translateY(-50%);
     cursor: pointer;
-    z-index: 1002;
+    z-index: var(--z-menu-toggle);
   }
 
   .mobile_nav_toggle,
@@ -99,13 +68,16 @@
 
   .mobile_drawer_nav {
     position: fixed;
-    top: 72px;
+    top: var(--header-height);
     left: 0;
-    z-index: 1001;
+    z-index: var(--z-drawer);
 
     display: block;
-    width: 30.77vw;
-    height: calc(100vh - 72px);
+    width: clamp(180px, 30.77vw, 320px);
+    max-width: 85vw;
+    height: calc(100vh - var(--header-height));
+    height: calc(100dvh - var(--header-height));
+    overflow-y: auto;
 
     background: var(--color-white);
     border-right: 1px solid rgba(0, 0, 0, 0.08);
@@ -195,7 +167,7 @@
   .nav_overlay {
     position: fixed;
     inset: 0;
-    z-index: 1000;
+    z-index: var(--z-header);
 
     display: block;
     background: rgba(0, 0, 0, 0.2);
@@ -220,21 +192,26 @@
 }
 
 @media (max-width: 480px) {
-  #header {
-    height: 68px;
+  :root {
+    --header-height: 104px;
   }
 
   .header_inner {
     padding: 0 16px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
   }
 
   .logo {
+    position: static;
+    transform: none;
     font-size: 1.2rem;
     letter-spacing: 3px;
   }
 
   .header_util {
-    right: 16px;
+    position: static;
     gap: 12px;
   }
 
@@ -242,17 +219,4 @@
     left: 16px;
   }
 
-  .main_nav {
-    top: 68px;
-    height: calc(100vh - 68px);
-  }
-
-  .mobile_drawer_nav {
-    top: 68px;
-    height: calc(100vh - 68px);
-  }
-
-  .nav_list a {
-    font-size: 0.76rem;
-  }
 }

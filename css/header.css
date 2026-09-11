@@ -2,7 +2,7 @@
   position: relative;
 
   width: 100%;
-  height: 80px;
+  height: var(--header-height);
 
   background: var(--color-white);
 }
@@ -18,7 +18,6 @@
   justify-content: center;
 
   padding: 0 40px;
-  box-sizing: border-box;
 }
 
 /* 로고 */
@@ -59,7 +58,8 @@
   transition: color var(--transition-normal);
 }
 
-.util_btn:hover {
+.util_btn:hover,
+.util_btn:focus-visible {
   color: var(--color-gold);
 }
 
@@ -138,4 +138,36 @@
 .nav_list a:hover,
 .nav_list a:focus-visible {
   color: var(--color-gold);
+}
+
+/* 모바일 메뉴 기본 상태 */
+.nav_menu_toggle_input {
+  display: none;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.mobile_nav_toggle {
+  display: none;
+}
+
+.nav_overlay {
+  display: none;
+}
+
+.mobile_drawer_nav {
+  display: none;
+}
+
+.nav_menu_toggle_input:checked ~ #header .mobile_nav_toggle span:nth-child(2) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.nav_menu_toggle_input:checked ~ #header .mobile_nav_toggle span:nth-child(3) {
+  opacity: 0;
+}
+
+.nav_menu_toggle_input:checked ~ #header .mobile_nav_toggle span:nth-child(4) {
+  transform: translateY(-6px) rotate(-45deg);
 }

@@ -4,6 +4,7 @@
   left: 0;
   width: 100%;
   height: 100vh;
+  height: 100dvh;
 
   background: var(--bg-dark);
   color: var(--text-gold);
@@ -24,8 +25,8 @@
 #intro h1 {
   position: absolute;
 
-  font-size: 80px;
-  letter-spacing: 10px;
+  font-size: clamp(2rem, 10vw, 5rem);
+  letter-spacing: clamp(3px, 1.25vw, 10px);
   font-weight: 700;
 
   opacity: 0;
@@ -34,7 +35,8 @@
 }
 
 .enter_btn {
-  margin-top: 500px;
+  margin-top: min(500px, 60vh);
+  margin-top: min(500px, 60dvh);
 
   position: relative;
 
@@ -74,6 +76,7 @@
     background var(--transition-normal);
 }
 
-.enter_btn:hover span {
+.enter_btn:hover span,
+.enter_btn:focus-visible span {
   width: 100%;
 }
