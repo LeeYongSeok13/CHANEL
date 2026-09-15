@@ -16,3 +16,12 @@ if (introShown === "true") {
   sessionStorage.setItem("introShown", "true");
 }
 
+// 5초마다 다음 슬라이드로 이동
+const track = document.querySelector(".slider_track");
+const slides = track.querySelectorAll(".slide");
+let slideIndex = 0;
+
+setInterval(() => {
+  slideIndex = (slideIndex + 1) % slides.length;
+  track.style.transform = `translateX(-${slideIndex * 100}%)`;
+}, 5000);
