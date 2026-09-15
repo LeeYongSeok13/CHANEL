@@ -1,0 +1,44 @@
+[
+    {
+        "id": "blouson-001",
+        "name": "블루종-001",
+        "price": 13650000,
+        "description": "The CHANEL jacket becomes a wool and silk Prince of Wales check bomber.",
+        "images": [
+            {
+                "src": "./images/blouson-001(1).webp",
+                "alt": "블루종-001 이미지"
+            },
+            {
+                "src": "./images/blouson-001(2).webp",
+                "alt": "블루종-001 이미지"
+            },
+            {
+                "src": "./images/blouson-001(3).webp",
+                "alt": "블루종-001 이미지"
+            }
+        ],
+        "featured": true
+    },
+    {
+        "id": "coat-001",
+        "name": "코트-001",
+        "price": 9330000,
+        "description":"Guided by the idea of movement, the Fall Winter 2026 collection explores the paradoxes at the heart of the CHANEL style.​",
+        "images": [
+            {
+                "src": "./images/coat-001(1).webp",
+                "alt": "코트-001 이미지"
+            },
+            {
+                "src": "./images/coat-001(2).webp",
+                "alt": "코트-001 이미지"
+            },
+            {
+                "src": "./images/coat-001(3).webp",
+                "alt": "코트-001 이미지"
+            }
+        ],
+        "featured": true
+    }
+]

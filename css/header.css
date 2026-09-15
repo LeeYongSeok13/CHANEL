@@ -171,3 +171,55 @@
 .nav_menu_toggle_input:checked ~ #header .mobile_nav_toggle span:nth-child(4) {
   transform: translateY(-6px) rotate(-45deg);
 }
+
+/* 하위 메뉴의 위치 기준 */
+.main_nav {
+  position: relative;
+  z-index: 100;
+}
+
+/* 하위 메뉴가 main_nav 너비를 기준으로 펼쳐지도록 설정 */
+.nav_list > .nav_item {
+  position: static;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  background: #fff;
+  color: #111;
+  border-top: 1px solid #eee;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.submenu_inner {
+  display: flex;
+  gap: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.submenu_group h2 {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.submenu_group ul {
+  display: grid;
+  gap: 14px;
+}
+
+/* 마우스와 키보드 모두 대응 */
+.nav_item:hover > .submenu,
+.nav_item:focus-within > .submenu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
