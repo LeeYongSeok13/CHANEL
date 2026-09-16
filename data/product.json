@@ -1,44 +1,159 @@
 [
     {
         "id": "blouson-001",
+        "category": "outer",
+        "subcategory": "blouson",
         "name": "블루종-001",
         "price": 13650000,
         "description": "The CHANEL jacket becomes a wool and silk Prince of Wales check bomber.",
         "images": [
             {
-                "src": "./images/blouson-001(1).webp",
+                "src": "./images/fashion/blouson-001(1).webp",
                 "alt": "블루종-001 이미지"
             },
             {
-                "src": "./images/blouson-001(2).webp",
+                "src": "./images/fashion/blouson-001(2).webp",
                 "alt": "블루종-001 이미지"
             },
             {
-                "src": "./images/blouson-001(3).webp",
+                "src": "./images/fashion/blouson-001(3).webp",
                 "alt": "블루종-001 이미지"
             }
         ],
         "featured": true
     },
     {
+        "id": "blouson-002",
+        "category": "outer",
+        "subcategory": "blouson",
+        "name": "블루종-002",
+        "price": 19000000,
+        "description": "Guided by the idea of movement, the Fall Winter 2026 collection explores the paradoxes at the heart of the CHANEL style.​",
+        "images": [
+            {
+                "src": "./images/fashion/blouson-002(1).webp",
+                "alt": "블루종-002 이미지"
+            },
+            {
+                "src": "./images/fashion/blouson-002(2).webp",
+                "alt": "블루종-002 이미지"
+            },
+            {
+                "src": "./images/fashion/blouson-002(3).webp",
+                "alt": "블루종-002 이미지"
+            }
+        ]
+
+    },
+    {
         "id": "coat-001",
+        "category": "outer",
+        "subcategory": "coat",
         "name": "코트-001",
         "price": 9330000,
         "description":"Guided by the idea of movement, the Fall Winter 2026 collection explores the paradoxes at the heart of the CHANEL style.​",
         "images": [
             {
-                "src": "./images/coat-001(1).webp",
+                "src": "./images/fashion/coat-001(1).webp",
                 "alt": "코트-001 이미지"
             },
             {
-                "src": "./images/coat-001(2).webp",
+                "src": "./images/fashion/coat-001(2).webp",
                 "alt": "코트-001 이미지"
             },
             {
-                "src": "./images/coat-001(3).webp",
+                "src": "./images/fashion/coat-001(3).webp",
                 "alt": "코트-001 이미지"
             }
         ],
         "featured": true
+    },
+    {
+        "id": "jacket-001",
+        "category": "outer",
+        "subcategory": "jacket",
+        "name": "재킷-001",
+        "price": 8290000,
+        "description": "Guided by the idea of movement, the Fall Winter 2026 collection explores the paradoxes at the heart of the CHANEL style.​",
+        "images": [
+            {
+                "src": "./images/fashion/jacket-001(1).webp",
+                "alt": "재킷-001 이미지"
+            },
+            {
+                "src": "./images/fashion/jacket-001(2).webp",
+                "alt": "재킷-001 이미지"
+            },
+            {
+                "src": "./images/fashion/jacket-001(3).webp",
+                "alt": "재킷-001 이미지"
+            }
+        ]
+    },
+    {
+        "id": "jacket-002",
+        "category": "outer",
+        "subcategory": "jacket",
+        "name": "재킷-002",
+        "price": 17100000,
+        "description": "A see-through woollen tweed reveals a printed lining evoking the show decor.​​",
+        "images": [
+            {
+                "src": "./images/fashion/jacket-002(1).webp",
+                "alt": "재킷-002 이미지"
+            },
+            {
+                "src": "./images/fashion/jacket-002(2).webp",
+                "alt": "재킷-002 이미지"
+            },
+            {
+                "src": "./images/fashion/jacket-002(3).webp",
+                "alt": "재킷-002 이미지"
+            }
+        ]
+    },
+    {
+        "id": "jacket-003",
+        "category": "outer",
+        "subcategory": "jacket",
+        "name": "재킷-003",
+        "price": 15550000,
+        "description": "Guided by the idea of movement, the Fall Winter 2026 collection explores the paradoxes at the heart of the CHANEL style.​​",
+        "images": [
+            {
+                "src": "./images/fashion/jacket-003(1).webp",
+                "alt": "재킷-003 이미지"
+            },
+            {
+                "src": "./images/fashion/jacket-003(2).webp",
+                "alt": "재킷-003 이미지"
+            },
+            {
+                "src": "./images/fashion/jacket-003(3).webp",
+                "alt": "재킷-003 이미지"
+            }
+        ]
+    },
+    {
+        "id": "overshirt-001",
+        "category": "outer",
+        "subcategory": "overshirt",
+        "name": "오버셔츠-001",
+        "price": 17100000,
+        "description": "Reinterpreted as a loose overshirt, the CHANEL jacket continues its metamorphosis.​",
+        "images": [
+            {
+                "src": "./images/fashion/overshirt-001(1).webp",
+                "alt": "오버셔츠-001 이미지"
+            },
+            {
+                "src": "./images/fashion/overshirt-001(2).webp",
+                "alt": "오버셔츠-001 이미지"
+            },
+            {
+                "src": "./images/fashion/overshirt-001(3).webp",
+                "alt": "오버셔츠-001 이미지"
+            }
+        ]
     }
 ]
