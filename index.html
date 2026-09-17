@@ -73,10 +73,26 @@
             <div class="submenu">
               <div class="submenu_inner container">
                 <div class="submenu_group">
-                  <h2>컬렉션</h2>
+                  <h2>의류</h2>
                   <ul>
-                    <li><a href="#">새로운 컬렉션</a></li>
-                    <li><a href="#">전체 보기</a></li>
+                    <li><a href="#" data-category="clothing">전체 보기</a></li>
+                    <li><a href="#" data-category="clothing" data-subcategory="outer">아우터</a></li>
+                    <li><a href="#" data-category="clothing" data-subcategory="top">탑</a></li>
+                    <li><a href="#" data-category="clothing" data-subcategory="dress">드레스</a></li>
+                    <li><a href="#" data-category="clothing" data-subcategory="skirt">스커트</a></li>
+                    <li><a href="#" data-category="clothing" data-subcategory="pants">팬츠</a></li>
+                  </ul>
+                </div>
+                <div class="submenu_group">
+                  <h2>핸드백</h2>
+                  <ul>
+                    <li><a href="#" data-category="handbag">전체 보기</a></li>
+                  </ul>
+                </div>
+                <div class="submenu_group">
+                  <h2>슈즈</h2>
+                  <ul>
+                    <li><a href="#" data-category="shoes">전체 보기</a></li>
                   </ul>
                 </div>
               </div>
@@ -95,7 +111,36 @@
     <nav id="mobile_navigation" class="mobile_drawer_nav" aria-label="모바일 네비게이션">
       <div class="nav_inner container">
         <ul class="mobile_nav_list">
-          <li><a href="#">패션</a></li>
+          <li>
+            <details class="mobile_fashion_menu">
+              <summary>패션</summary>
+              <div class="mobile_submenu">
+                <details class="submenu_group mobile_category_menu">
+                  <summary>의류</summary>
+                  <ul>
+                    <li><a href="#" data-category="clothing">전체 보기</a></li>
+                    <li><a href="#" data-category="clothing" data-subcategory="outer">아우터</a></li>
+                    <li><a href="#" data-category="clothing" data-subcategory="top">탑</a></li>
+                    <li><a href="#" data-category="clothing" data-subcategory="dress">드레스</a></li>
+                    <li><a href="#" data-category="clothing" data-subcategory="skirt">스커트</a></li>
+                    <li><a href="#" data-category="clothing" data-subcategory="pants">팬츠</a></li>
+                  </ul>
+                </details>
+                <details class="submenu_group mobile_category_menu">
+                  <summary>핸드백</summary>
+                  <ul>
+                    <li><a href="#" data-category="handbag">전체 보기</a></li>
+                  </ul>
+                </details>
+                <details class="submenu_group mobile_category_menu">
+                  <summary>슈즈</summary>
+                  <ul>
+                    <li><a href="#" data-category="shoes">전체 보기</a></li>
+                  </ul>
+                </details>
+              </div>
+            </details>
+          </li>
           <li><a href="#">주얼리</a></li>
           <li><a href="#">워치</a></li>
           <li><a href="#">아이웨어</a></li>
@@ -114,7 +159,7 @@
       <!-- 슬라이드 섹션 -->
       <section class="slider">
         <div class="slider_track">
-          <div class="slide">
+          <div class="slide is_active">
             <img src="./images/Slider1.avif" alt="슬라이드 이미지 1" />
             <div class="slide_content">
               <h2>패션</h2>
@@ -184,6 +229,7 @@
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://kit.fontawesome.com/1f1be3aed3.js" crossorigin="anonymous"></script>
     <script src="./js/navigation.js"></script>
+    <script src="./js/slider.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

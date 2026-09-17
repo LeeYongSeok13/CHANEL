@@ -85,7 +85,7 @@
   min-height: 54px;
 }
 
-.nav_list li {
+.nav_list > li {
   position: relative;
 
   display: flex;
@@ -93,7 +93,7 @@
   justify-content: center;
 }
 
-.nav_list a {
+.nav_list > li > a {
   position: relative;
 
   display: inline-flex;
@@ -111,7 +111,7 @@
   transition: color 0.25s ease;
 }
 
-.nav_list a::after {
+.nav_list > li > a::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -129,8 +129,8 @@
   transition: transform 0.35s ease, opacity 0.35s ease;
 }
 
-.nav_list a:hover::after,
-.nav_list a:focus-visible::after {
+.nav_list > li > a:hover::after,
+.nav_list > li > a:focus-visible::after {
   transform: translateX(-50%) scaleX(1);
   opacity: 1;
 }
@@ -200,10 +200,10 @@
 }
 
 .submenu_inner {
-  display: flex;
-  gap: 80px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+  padding: 40px;
 }
 
 .submenu_group h2 {
@@ -214,6 +214,15 @@
 .submenu_group ul {
   display: grid;
   gap: 14px;
+}
+
+.submenu_group a {
+  display: inline-block;
+  padding: 4px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-black);
+  transition: color 0.25s ease;
 }
 
 /* 마우스와 키보드 모두 대응 */

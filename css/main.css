@@ -83,17 +83,27 @@
 
 /* 슬라이드 */
 .slider {
+  position: relative;
   overflow: hidden;
+  --slide-fade-duration: 1.2s;
 }
 
 .slider_track {
-  display: flex;
-  transition: transform 0.6s ease;
+  display: grid;
 }
 
 .slider_track > .slide {
-  flex: 0 0 100%;
+  grid-area: 1 / 1;
   min-width: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--slide-fade-duration) ease-in-out;
+}
+
+.slider_track > .slide.is_active {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 1;
 }
 
 .slide {
@@ -133,6 +143,12 @@
 
 .slide_content {
   max-width: 600px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slider_track > .slide {
+    transition: none;
+  }
 }
 
 .slide_content h2 {

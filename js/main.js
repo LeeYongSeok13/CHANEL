@@ -6,22 +6,19 @@ const introShown = sessionStorage.getItem("introShown");
 // 인트로 화면에서 "Enter" 버튼 클릭 시 인트로 숨기기
 enterBtn.addEventListener("click", () => {
   intro.classList.add("hide");
-});
+  // 인트로가 완전히 사라지면 슬라이드 시작
+  intro.addEventListener("transitionend", function onIntroHidden(event) {
+    if (event.target !== intro || event.propertyName !== "transform") return;
+    intro.removeEventListener("transitionend", onIntroHidden);
+    startSlider();
+  });
+}, { once: true });
 
 if (introShown === "true") {
   // 이미 봤다면 인트로 숨기기
   intro.style.display = "none";
+  startSlider();
 } else {
   // 처음이라면 방문 기록 저장하기
   sessionStorage.setItem("introShown", "true");
 }
-
-// 5초마다 다음 슬라이드로 이동
-const track = document.querySelector(".slider_track");
-const slides = track.querySelectorAll(".slide");
-let slideIndex = 0;
-
-setInterval(() => {
-  slideIndex = (slideIndex + 1) % slides.length;
-  track.style.transform = `translateX(-${slideIndex * 100}%)`;
-}, 5000);
