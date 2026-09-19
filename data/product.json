@@ -72,6 +72,29 @@
         "featured": true
     },
     {
+        "id": "coat-002",
+        "category": "clothing",
+        "subcategory": "outer",
+        "type": "coat",
+        "name": "코트-002",
+        "price": 22800000,
+        "description":"Guided by the idea of movement, the Fall Winter 2026 collection explores the paradoxes at the heart of the CHANEL style.​",
+        "images": [
+            {
+                "src": "./images/fashion/coat-002(1).webp",
+                "alt": "코트-002 이미지"
+            },
+            {
+                "src": "./images/fashion/coat-002(2).webp",
+                "alt": "코트-002 이미지"
+            },
+            {
+                "src": "./images/fashion/coat-002(3).webp",
+                "alt": "코트-002 이미지"
+            }
+        ]
+    },
+    {
         "id": "jacket-001",
         "category": "clothing",
         "subcategory": "outer",
@@ -141,6 +164,75 @@
         ]
     },
     {
+        "id": "jacket-004",
+        "category": "clothing",
+        "subcategory": "outer",
+        "type": "jacket",
+        "name": "재킷-004",
+        "price": 126100000,
+        "description": "Guided by the idea of movement, the Fall Winter 2026 collection explores the paradoxes at the heart of the CHANEL style.​​",
+        "images": [
+            {
+                "src": "./images/fashion/jacket-004(1).webp",
+                "alt": "재킷-004 이미지"
+            },
+            {
+                "src": "./images/fashion/jacket-004(2).webp",
+                "alt": "재킷-004 이미지"
+            },
+            {
+                "src": "./images/fashion/jacket-004(3).webp",
+                "alt": "재킷-004 이미지"
+            }
+        ]
+    },
+    {
+        "id": "jacket-005",
+        "category": "clothing",
+        "subcategory": "outer",
+        "type": "jacket",
+        "name": "재킷-005",
+        "price": 17100000,
+        "description": "Black and white wool crepe, visible weighted chains, frayed braids, the CHANEL jacket continues its metamorphosis.​​​",
+        "images": [
+            {
+                "src": "./images/fashion/jacket-005(1).webp",
+                "alt": "재킷-005 이미지"
+            },
+            {
+                "src": "./images/fashion/jacket-005(2).webp",
+                "alt": "재킷-005 이미지"
+            },
+            {
+                "src": "./images/fashion/jacket-005(3).webp",
+                "alt": "재킷-005 이미지"
+            }
+        ]
+    },
+    {
+        "id": "jacket-006",
+        "category": "clothing",
+        "subcategory": "outer",
+        "type": "jacket",
+        "name": "재킷-006",
+        "price": 19170000,
+        "description": "Reinvented in cloqué lurex with a tulip pattern, the CHANEL jacket continues its metamorphosis.​​​",
+        "images": [
+            {
+                "src": "./images/fashion/jacket-006(1).webp",
+                "alt": "재킷-006 이미지"
+            },
+            {
+                "src": "./images/fashion/jacket-006(2).webp",
+                "alt": "재킷-006 이미지"
+            },
+            {
+                "src": "./images/fashion/jacket-006(3).webp",
+                "alt": "재킷-006 이미지"
+            }
+        ]
+    },
+    {
         "id": "overshirt-001",
         "category": "clothing",
         "subcategory": "outer",
@@ -160,6 +252,282 @@
             {
                 "src": "./images/fashion/overshirt-001(3).webp",
                 "alt": "오버셔츠-001 이미지"
+            }
+        ]
+    },
+    {
+        "id": "skirt-001",
+        "category": "clothing",
+        "subcategory": "bottom",
+        "type": "skirt",
+        "name": "스커트-001",
+        "price": 8810000,
+        "description": "Hand-embroidered braiding and jewelled buttons adorn an off-white wool skirt. ​​",
+        "images": [
+            {
+                "src": "./images/fashion/skirt-001(1).webp",
+                "alt": "스커트-001 이미지"
+            },
+            {
+                "src": "./images/fashion/skirt-001(2).webp",
+                "alt": "스커트-001 이미지"
+            },
+            {
+                "src": "./images/fashion/skirt-001(3).webp",
+                "alt": "스커트-001 이미지"
+            }
+        ]
+    },
+    {
+        "id": "pants-001",
+        "category": "clothing",
+        "subcategory": "bottom",
+        "type": "pants",
+        "name": "팬츠-001",
+        "price": 5870000,
+        "description": "Guided by the idea of movement, the Fall Winter 2026 collection explores the paradoxes at the heart of the CHANEL style.​​",
+        "images": [
+            {
+                "src": "./images/fashion/pants-001(1).webp",
+                "alt": "팬츠-001 이미지"
+            },
+            {
+                "src": "./images/fashion/pants-001(2).webp",
+                "alt": "팬츠-001 이미지"
+            },
+            {
+                "src": "./images/fashion/pants-001(3).webp",
+                "alt": "팬츠-001 이미지"
+            }
+        ]
+    },
+    {
+        "id": "pants-002",
+        "category": "clothing",
+        "subcategory": "bottom",
+        "type": "pants",
+        "name": "팬츠-002",
+        "price": 4620000,
+        "description": "샤넬 2026 가을 겨울 프리-컬렉션은 라운지웨어부터 테일러드 오피스웨어, 이브닝 룩까지 이어지는 에센셜 워드로브를 선보입니다.​​",
+        "images": [
+            {
+                "src": "./images/fashion/pants-002(1).webp",
+                "alt": "팬츠-002 이미지"
+            },
+            {
+                "src": "./images/fashion/pants-002(2).webp",
+                "alt": "팬츠-002 이미지"
+            },
+            {
+                "src": "./images/fashion/pants-002(3).webp",
+                "alt": "팬츠-002 이미지"
+            }
+        ]
+    },
+    {
+        "id": "pants-003",
+        "category": "clothing",
+        "subcategory": "bottom",
+        "type": "pants",
+        "name": "팬츠-003",
+        "price": 7300000,
+        "description": "샤넬 2026 가을 겨울 프리-컬렉션은 라운지웨어부터 테일러드 오피스웨어, 이브닝 룩까지 이어지는 에센셜 워드로브를 선보입니다.​​",
+        "images": [
+            {
+                "src": "./images/fashion/pants-003(1).webp",
+                "alt": "팬츠-003 이미지"
+            },
+            {
+                "src": "./images/fashion/pants-003(2).webp",
+                "alt": "팬츠-003 이미지"
+            },
+            {
+                "src": "./images/fashion/pants-003(3).webp",
+                "alt": "팬츠-003 이미지"
+            }
+        ]
+    },
+    {
+        "id": "top-001",
+        "category": "clothing",
+        "subcategory": "top",
+        "type": "top",
+        "name": "탑-001",
+        "price": 6560000,
+        "description": "Guided by the idea of movement, the Fall Winter 2026 collection explores the paradoxes at the heart of the CHANEL style.​",
+        "images": [
+            {
+                "src": "./images/fashion/top-001(1).webp",
+                "alt": "탑-001 이미지"
+            },
+            {
+                "src": "./images/fashion/top-001(2).webp",
+                "alt": "탑-001 이미지"
+            },
+            {
+                "src": "./images/fashion/top-001(3).webp",
+                "alt": "탑-001 이미지"
+            }
+        ]
+    },
+    {
+        "id": "top-002",
+        "category": "clothing",
+        "subcategory": "top",
+        "type": "top",
+        "name": "탑-002",
+        "price": 9500000,
+        "description": "A knotted and embroidered silk top with colors and patterns inspired by nocturnal butterflies.​​",
+        "images": [
+            {
+                "src": "./images/fashion/top-002(1).webp",
+                "alt": "탑-002 이미지"
+            },
+            {
+                "src": "./images/fashion/top-002(2).webp",
+                "alt": "탑-002 이미지"
+            },
+            {
+                "src": "./images/fashion/top-002(3).webp",
+                "alt": "탑-002 이미지"
+            }
+        ]
+    },
+    {
+        "id": "top-003",
+        "category": "clothing",
+        "subcategory": "top",
+        "type": "top",
+        "name": "탑-003",
+        "price": 6560000,
+        "description": "A knotted and embroidered silk top with colors and patterns inspired by nocturnal butterflies.​​",
+        "images": [
+            {
+                "src": "./images/fashion/top-003(1).webp",
+                "alt": "탑-003 이미지"
+            },
+            {
+                "src": "./images/fashion/top-003(2).webp",
+                "alt": "탑-003 이미지"
+            },
+            {
+                "src": "./images/fashion/top-003(3).webp",
+                "alt": "탑-003 이미지"
+            }
+        ]
+    },
+    {
+        "id": "top-004",
+        "category": "clothing",
+        "subcategory": "top",
+        "type": "top",
+        "name": "탑-004",
+        "price": 16930000,
+        "description": "Guided by the idea of movement, the Fall Winter 2026 collection explores the paradoxes at the heart of the CHANEL style.​​",
+        "images": [
+            {
+                "src": "./images/fashion/top-004(1).webp",
+                "alt": "탑-004 이미지"
+            },
+            {
+                "src": "./images/fashion/top-004(2).webp",
+                "alt": "탑-004 이미지"
+            },
+            {
+                "src": "./images/fashion/top-004(3).webp",
+                "alt": "탑-004 이미지"
+            }
+        ]
+    },
+    {
+        "id": "dress-001",
+        "category": "clothing",
+        "subcategory": "onepiece",
+        "type": "dress",
+        "name": "드레스-001",
+        "price": 24010000,
+        "description": "A silk-knit dress embroidered throughout in colors and patterns inspired by nocturnal butterflies.​​",
+        "images": [
+            {
+                "src": "./images/fashion/dress-001(1).webp",
+                "alt": "드레스-001 이미지"
+            },
+            {
+                "src": "./images/fashion/dress-001(2).webp",
+                "alt": "드레스-001 이미지"
+            },
+            {
+                "src": "./images/fashion/dress-001(3).webp",
+                "alt": "드레스-001 이미지"
+            }
+        ]
+    },
+    {
+        "id": "dress-002",
+        "category": "clothing",
+        "subcategory": "onepiece",
+        "type": "dress",
+        "name": "드레스-002",
+        "price": 19860000,
+        "description": "Guided by the idea of movement, the Fall Winter 2026 collection explores the paradoxes at the heart of the CHANEL style.​​​",
+        "images": [
+            {
+                "src": "./images/fashion/dress-002(1).webp",
+                "alt": "드레스-002 이미지"
+            },
+            {
+                "src": "./images/fashion/dress-002(2).webp",
+                "alt": "드레스-002 이미지"
+            },
+            {
+                "src": "./images/fashion/dress-002(3).webp",
+                "alt": "드레스-002 이미지"
+            }
+        ]
+    },
+    {
+        "id": "dress-003",
+        "category": "clothing",
+        "subcategory": "onepiece",
+        "type": "dress",
+        "name": "드레스-003",
+        "price": 21760000,
+        "description": "A silk-petal camelia handmade by the Maison d’art Lemarié blossoms on the back of a little black dress.​​​​",
+        "images": [
+            {
+                "src": "./images/fashion/dress-003(1).webp",
+                "alt": "드레스-003 이미지"
+            },
+            {
+                "src": "./images/fashion/dress-003(2).webp",
+                "alt": "드레스-003 이미지"
+            },
+            {
+                "src": "./images/fashion/dress-003(3).webp",
+                "alt": "드레스-003 이미지"
+            }
+        ]
+    },
+    {
+        "id": "dress-004",
+        "category": "clothing",
+        "subcategory": "onepiece",
+        "type": "dress",
+        "name": "드레스-004",
+        "price": 19860000,
+        "description": "A draped crepe jersey gives volume and fluidity to a monochrome dress.​​​​",
+        "images": [
+            {
+                "src": "./images/fashion/dress-004(1).webp",
+                "alt": "드레스-004 이미지"
+            },
+            {
+                "src": "./images/fashion/dress-004(2).webp",
+                "alt": "드레스-004 이미지"
+            },
+            {
+                "src": "./images/fashion/dress-004(3).webp",
+                "alt": "드레스-004 이미지"
             }
         ]
     }
