@@ -1,0 +1,56 @@
+/* 추천 상품 섹션 */
+.featured_products {
+    padding: 5rem 1.25rem;
+}   
+
+/* 카테고리 제목 */
+.products_heading {
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.products_heading h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* 버튼 및 상품 목록 */
+.products_carousel {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.products_list {
+    flex: 1;
+    min-width: 0;
+    min-height: 22.5rem;
+}
+
+.products_prev,
+.products_next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 2.75rem;
+    height: 2.75rem;
+
+    border: none;
+    background: transparent;
+    color: #111;
+    font-size: 1.5rem;
+
+    transition: color 0.2s ease;
+}
+
+.products_prev:hover,
+.products_next:hover {
+    color: var(--color-gold);
+}
+
+.products_prev:focus-visible,
+.products_next:focus-visible {
+  outline: 0.125rem solid #111;
+  outline-offset: 0.25rem;
+}

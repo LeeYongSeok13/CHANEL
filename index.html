@@ -223,6 +223,29 @@
           </div>
         </div>
       </section>
+      
+      <!-- 상품 목록 섹션 -->
+      <section class="featured_products">
+        <div class="container">
+          <!-- 현재 카테고리 제목 -->
+          <div class="products_heading">
+            <h2 id="featured_title">패션</h2>
+          </div>
+
+          <!-- 상품 목록 -->
+          <div class="products_carousel">
+            <button type="button" class="products_prev" aria-label="이전 카테고리">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <ul class="products_list" id="featured_list"></ul>
+
+            <button type="button" class="products_next" aria-label="다음 카테고리">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- js -->
@@ -231,5 +254,6 @@
     <script src="./js/navigation.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/main.js"></script>
+    <script type="module" src="./js/featured-products.js"></script>
   </body>
 </html>
