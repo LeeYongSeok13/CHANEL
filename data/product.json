@@ -115,7 +115,8 @@
                 "src": "./images/fashion/jacket-001(3).webp",
                 "alt": "재킷-001 이미지"
             }
-        ]
+        ],
+        "featured": true
     },
     {
         "id": "jacket-002",

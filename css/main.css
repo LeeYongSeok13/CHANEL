@@ -191,7 +191,36 @@
 }
 
 .product_card {
-  flex: 0 0 calc((100% - 2rem) / 2);
+  flex: 0 0 calc((100% - 2rem) / 3);
   min-width: 0;
+  padding: 2rem;
   text-align: center;
+
+  background-color: #fff;
+  border: 1px solid var(--color-gold);
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.product_name {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.product_price {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+
+.product_image {
+  display: block;
+  width: 75%;
+  height: auto;
+  border: 1px solid var(--color-gold);
+  border-radius: 8px;
+  margin-inline: auto;
 }
