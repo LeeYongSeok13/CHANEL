@@ -283,6 +283,15 @@
     visibility: visible;
     pointer-events: auto;
   }
+
+  /* 상품 목록 */
+  .products_list {
+    gap: 2.5rem;
+  }
+
+  .product_card {
+    flex-basis: 100%;
+  }
 }
 
 @media (max-width: 480px) {
