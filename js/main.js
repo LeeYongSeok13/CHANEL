@@ -12,6 +12,8 @@ enterBtn.addEventListener("click", () => {
   intro.addEventListener("transitionend", function onIntroHidden(event) {
     if (event.target !== intro || event.propertyName !== "transform") return;
     intro.removeEventListener("transitionend", onIntroHidden);
+    // 인트로 완전히 숨김
+    intro.style.display = "none";
     startSlider();
   });
 }, { once: true });

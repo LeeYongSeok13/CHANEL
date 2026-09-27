@@ -225,25 +225,80 @@
       </section>
       
       <!-- 상품 목록 섹션 -->
-      <section class="featured_products">
+      <section class="featured_products" aria-labelledby="featured_title">
         <div class="container">
-          <!-- 현재 카테고리 제목 -->
-          <div class="products_heading">
-            <h2 id="featured_title">패션</h2>
-          </div>
+          <h2 id="featured_title" class="featured_title">추천 상품</h2>
 
-          <!-- 상품 목록 -->
-          <div class="products_carousel">
-            <button type="button" class="products_prev" aria-label="이전 카테고리">
-              <i class="fa-solid fa-chevron-left"></i>
+          <!-- 상품 범주 선택 -->
+          <div class="product_categories" role="group" aria-label="상품 범주">
+            <button
+            type="button"
+            class="category_btn"
+            data-category="clothing"
+            aria-pressed="true"
+            aria-controls="featured_list"
+            >
+              패션
             </button>
 
-            <ul class="products_list" id="featured_list"></ul>
+            <button
+            type="button"
+            class="category_btn"
+            data-category="jewelry"
+            aria-pressed="false"
+            aria-controls="featured_list"
+            >
+              주얼리
+            </button>
 
-            <button type="button" class="products_next" aria-label="다음 카테고리">
-              <i class="fa-solid fa-chevron-right"></i>
+            <button
+            type="button"
+            class="category_btn"
+            data-category="watch"
+            aria-pressed="false"
+            aria-controls="featured_list"
+            >
+              워치
+            </button>
+
+            <button
+            type="button"
+            class="category_btn"
+            data-category="fragrance"
+            aria-pressed="false"
+            aria-controls="featured_list"
+            >
+              향수
+            </button>
+
+            <button
+              type="button"
+              class="category_btn"
+              data-category="makeup"
+              aria-pressed="false"
+              aria-controls="featured_list"
+            >
+             메이크업
+            </button>
+
+            <button
+              type="button"
+              class="category_btn"
+              data-category="skincare"
+              aria-pressed="false"
+              aria-controls="featured_list"
+            >
+              스킨케어
             </button>
           </div>
+
+          <!-- 선택한 범주의 추천 상품을 JS로 삽입 -->
+          <ul class="products_list" id="featured_list"></ul>
+
+          <!-- 선택한 범주의 전체 상품 페이지로 이동 -->
+           <a href="./pages/products.html?category=clothing" class="products_more">
+            패션 전체 보기
+           </a>
         </div>
       </section>
     </main>
