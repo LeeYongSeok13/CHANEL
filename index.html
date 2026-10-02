@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
@@ -68,13 +68,21 @@
         <ul class="nav_list">
           <li class="nav_item">
             <a href="./pages/products.html?category=clothing">패션</a>
+            <button type="button" class="mobile_submenu_toggle" aria-expanded="false" aria-controls="fashion_submenu">패션</button>
 
             <!-- 서브 메뉴 -->
-            <div class="submenu">
+            <div class="submenu" id="fashion_submenu">
               <div class="submenu_inner container">
                 <div class="submenu_group">
-                  <h2>의류</h2>
-                  <ul>
+                  <h2>
+                    <button
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="clothing_submenu">
+                      의류
+                    </button>
+                  </h2>
+                  <ul id="clothing_submenu" hidden>
                     <li><a href="./pages/products.html?category=clothing" data-category="clothing">전체 보기</a></li>
                     <li><a href="./pages/products.html?category=clothing&subcategory=outer" data-category="clothing" data-subcategory="outer">아우터</a></li>
                     <li><a href="./pages/products.html?category=clothing&subcategory=top" data-category="clothing" data-subcategory="top">탑</a></li>
@@ -84,16 +92,30 @@
                   </ul>
                 </div>
                 <div class="submenu_group">
-                  <h2>핸드백</h2>
-                  <ul>
+                  <h2>
+                    <button
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="handbag_submenu">
+                      핸드백
+                    </button>
+                  </h2>
+                  <ul id="handbag_submenu" hidden>
                     <li><a href="#" data-category="handbag">전체 보기</a></li>
                     <li><a href="#" data-category="handbag" data-subcategory="flap">플랩백</a></li>
                     <li><a href="#" data-category="handbag" data-subcategory="shopping">쇼핑백</a></li>
                   </ul>
                 </div>
                 <div class="submenu_group">
-                  <h2>슈즈</h2>
-                  <ul>
+                  <h2>
+                    <button
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="shoes_submenu">
+                      슈즈
+                    </button>
+                  </h2>
+                  <ul id="shoes_submenu" hidden>
                     <li><a href="#" data-category="shoes">전체 보기</a></li>
                     <li><a href="#" data-category="shoes" data-subcategory="maryjane">메리제인 슈즈</a></li>
                     <li><a href="#" data-category="shoes" data-subcategory="mule">뮬</a></li>
@@ -276,3 +298,4 @@
     <script type="module" src="./js/product.js"></script>
   </body>
 </html>
+
