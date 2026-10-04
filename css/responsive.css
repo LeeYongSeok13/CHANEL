@@ -298,11 +298,11 @@
 
   /* 상품 목록 */
   .products_list {
-    gap: 2.5rem;
+    gap: 2rem;
   }
 
   .product_card {
-    flex-basis: 100%;
+    flex-basis: calc((100% - 2rem) / 2);
   }
 }
 

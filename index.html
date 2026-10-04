@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/layout.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/product.css" />
+    <link rel="stylesheet" href="./css/products.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/animation.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
@@ -279,7 +279,25 @@
           </div>
 
           <!-- 선택한 범주의 추천 상품을 JS로 삽입 -->
-          <ul class="products_list" id="featured_list"></ul>
+          <div class="products_carousel">
+            <button
+              type="button"
+              class="products_prev"
+              aria-label="이전 상품 보기"
+              aria-controls="featured_list"
+            >
+            </button>
+
+            <ul class="products_list" id="featured_list"></ul>
+
+            <button
+              type="button"
+              class="products_next"
+              aria-label="다음 상품 보기"
+              aria-controls="featured_list"
+            >
+            </button>
+          </div>
 
           <!-- 선택한 범주의 전체 상품 페이지로 이동 -->
            <a href="./pages/products.html?category=clothing" class="products_more">
@@ -295,7 +313,7 @@
     <script src="./js/navigation.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/main.js"></script>
-    <script type="module" src="./js/product.js"></script>
+    <script type="module" src="./js/products.js"></script>
   </body>
 </html>
 

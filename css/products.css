@@ -16,6 +16,17 @@
 }
 
 /* 버튼 및 상품 목록 */
+.featured_products .product_categories {
+    margin-bottom: 2.5rem;
+}
+
+.products_more {
+    display: block;
+    width: fit-content;
+    margin: 2.5rem auto 0;
+    padding: 0.75rem 1.5rem;
+}
+
 .products_carousel {
     display: flex;
     align-items: center;
@@ -23,9 +34,52 @@
 }
 
 .products_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
     flex: 1;
     min-width: 0;
     min-height: 22.5rem;
+}
+
+.product_card {
+    flex: 0 0 calc((100% - 6rem) / 4);
+    min-width: 0;
+    border: 1px solid var(--color-gold);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+    text-align: center;
+}
+
+.product_card img {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    aspect-ratio: 3 / 4;
+    object-fit: contain;
+}
+
+.product_name {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.product_price {
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .product_card {
+        flex-basis: calc((100% - 2rem) / 2);
+    }
+}
+
+@media (max-width: 480px) {
+    .product_card {
+        flex-basis: 100%;
+    }
 }
 
 .products_prev,

@@ -92,7 +92,8 @@
                 "src": "./images/fashion/coat-002(3).webp",
                 "alt": "코트-002 이미지"
             }
-        ]
+        ],
+        "featured": true
     },
     {
         "id": "jacket-001",
