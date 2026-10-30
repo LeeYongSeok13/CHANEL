@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/animation.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
   </head>
   <body>
     <input type="checkbox" id="nav_menu_toggle" class="nav_menu_toggle_input" aria-label="모바일 메뉴" aria-controls="mobile_navigation" />
@@ -286,9 +289,13 @@
               aria-label="이전 상품 보기"
               aria-controls="featured_list"
             >
+              <i class="fa-solid fa-chevron-left"></i>
             </button>
 
-            <ul class="products_list" id="featured_list"></ul>
+            <!-- 상품이 보이는 영역 -->
+            <div class="products_viewport">
+              <ul class="products_list" id="featured_list" aria-live="polite"></ul>
+            </div>
 
             <button
               type="button"
@@ -296,6 +303,7 @@
               aria-label="다음 상품 보기"
               aria-controls="featured_list"
             >
+              <i class="fa-solid fa-chevron-right"></i>
             </button>
           </div>
 
