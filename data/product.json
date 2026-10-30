@@ -140,7 +140,8 @@
                 "src": "./images/fashion/jacket-002(3).webp",
                 "alt": "재킷-002 이미지"
             }
-        ]
+        ],
+        "featured": true
     },
     {
         "id": "jacket-003",
@@ -255,7 +256,8 @@
                 "src": "./images/fashion/overshirt-001(3).webp",
                 "alt": "오버셔츠-001 이미지"
             }
-        ]
+        ],
+        "featured": true
     },
     {
         "id": "skirt-001",
