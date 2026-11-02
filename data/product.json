@@ -545,8 +545,108 @@
         "description": "컬렉션의 백은 자연스러운 톤부터 오묘한 파스텔 색조까지 이어지는 팔레트를 바탕으로 형태와 소재를 다양하게 변주합니다.",
         "images": [
             {
-                "src": "./images/fashion/flapbag-001.webp",
+                "src": "./images/fashion/flapbag-001(1).webp",
                 "alt": "플랩백-001 이미지"
+            },
+            {
+                "src": "./images/fashion/flapbag-001(2).webp",
+                "alt": "플랩백-001 이미지"
+            },
+            {
+                "src": "./images/fashion/flapbag-001(3).webp",
+                "alt": "플랩백-001 이미지"
+            }
+        ]
+    },
+    {
+        "id": "flapbag-002",
+        "category": "handbag",
+        "subcategory": "flapbag",
+        "type": "flapbag",
+        "name": "맥시 플랩 백-002",
+        "price": 9980000,
+        "description": "컬렉션의 백은 자연스러운 톤부터 오묘한 파스텔 색조까지 이어지는 팔레트를 바탕으로 형태와 소재를 다양하게 변주합니다.",
+        "images": [
+            {
+                "src": "./images/fashion/flapbag-002(1).webp",
+                "alt": "플랩백-002 이미지"
+            },
+            {
+                "src": "./images/fashion/flapbag-002(2).webp",
+                "alt": "플랩백-002 이미지"
+            },
+            {
+                "src": "./images/fashion/flapbag-002(3).webp",
+                "alt": "플랩백-002 이미지"
+            }
+        ]
+    },
+    {
+        "id": "flapbag-003",
+        "category": "handbag",
+        "subcategory": "flapbag",
+        "type": "flapbag",
+        "name": "맥시 플랩 백-003",
+        "price": 9850000,
+        "description": "컬렉션의 백은 자연스러운 톤부터 오묘한 파스텔 색조까지 이어지는 팔레트를 바탕으로 형태와 소재를 다양하게 변주합니다.",
+        "images": [
+            {
+                "src": "./images/fashion/flapbag-003(1).webp",
+                "alt": "플랩백-003 이미지"
+            },
+            {
+                "src": "./images/fashion/flapbag-003(2).webp",
+                "alt": "플랩백-003 이미지"
+            },
+            {
+                "src": "./images/fashion/flapbag-003(3).webp",
+                "alt": "플랩백-003 이미지"
+            }
+        ]
+    },
+    {
+        "id": "flapbag-004",
+        "category": "handbag",
+        "subcategory": "flapbag",
+        "type": "flapbag",
+        "name": "맥시 플랩 백-004",
+        "price": 21070000,
+        "description": "컬렉션의 백은 자연스러운 톤부터 오묘한 파스텔 색조까지 이어지는 팔레트를 바탕으로 형태와 소재를 다양하게 변주합니다.",
+        "images": [
+            {
+                "src": "./images/fashion/flapbag-004(1).webp",
+                "alt": "플랩백-004 이미지"
+            },
+            {
+                "src": "./images/fashion/flapbag-004(2).webp",
+                "alt": "플랩백-004 이미지"
+            },
+            {
+                "src": "./images/fashion/flapbag-004(3).webp",
+                "alt": "플랩백-004 이미지"
+            }
+        ]
+    },
+    {
+        "id": "shoppingbag-001",
+        "category": "handbag",
+        "subcategory": "shoppingbag",
+        "type": "shoppingbag",
+        "name": "쇼핑백-001",
+        "price": 10710000,
+        "description": "컬렉션의 백은 자연스러운 톤부터 오묘한 파스텔 색조까지 이어지는 팔레트를 바탕으로 형태와 소재를 다양하게 변주합니다.",
+        "images": [
+            {
+                "src": "./images/fashion/shoppingbag-001(1).webp",
+                "alt": "쇼핑백-001 이미지"
+            },
+            {
+                "src": "./images/fashion/shoppingbag-001(2).webp",
+                "alt": "쇼핑백-001 이미지"
+            },
+            {
+                "src": "./images/fashion/shoppingbag-001(3).webp",
+                "alt": "쇼핑백-001 이미지"
             }
         ]
     }
