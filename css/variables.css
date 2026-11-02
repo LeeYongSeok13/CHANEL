@@ -9,6 +9,7 @@
   --color-gray: #f5f5f5;
   --color-gold: #c9a96e;
   --color-border: #ddd;
+  --color-card-background: #eeece8;
 
   /* ==============================
      Background
@@ -17,6 +18,7 @@
   --bg-primary: var(--color-white);
   --bg-dark: var(--color-black);
   --bg-hover: var(--color-white);
+  --bg-card-background: var(--color-card-background);
 
   /* ==============================
      Text
