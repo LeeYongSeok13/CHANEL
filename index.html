@@ -10,6 +10,7 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/collection.css" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/layout.css" />
     <link rel="stylesheet" href="./css/header.css" />
@@ -215,104 +216,59 @@
         </div>
       </section>
       
-      <!-- 상품 목록 섹션 -->
-      <section class="featured_products" aria-labelledby="featured_title">
+      <!-- Collection 섹션 -->
+      <section class="collection">
         <div class="container">
-          <h2 id="featured_title" class="featured_title">CHANEL Selection</h2>
+          <ul class="collection_list">
+            <li class="collection_item">
+              <a href="./pages/product.html?category=clothing" class="collection_link">
+                <img src="./images/Collection_Fashion.webp" alt="CHANEL 패션 컬렉션" />
+                <span class="collection_title">FASHION</span>
+              </a>
+            </li>
 
-          <!-- 상품 범주 선택 -->
-          <div class="product_categories" role="group" aria-label="상품 범주">
-            <button
-            type="button"
-            class="category_btn"
-            data-category="clothing"
-            aria-pressed="true"
-            aria-controls="featured_list"
-            >
-              패션
-            </button>
+            <li class="collection_item">
+              <a href="./pages/product.html?category=jewelry" class="collection_link">
+                <img src="./images/Collection_Jewelry.webp" alt="CHANEL 주얼리 컬렉션" />
+                <span class="collection_title">JEWELRY</span>
+              </a>
+            </li>
 
-            <button
-            type="button"
-            class="category_btn"
-            data-category="jewelry"
-            aria-pressed="false"
-            aria-controls="featured_list"
-            >
-              주얼리
-            </button>
+            <li class="collection_item">
+              <a href="./pages/product.html?category=watch" class="collection_link">
+                <img src="./images/Collection_Watch.webp" alt="CHANEL 워치 컬렉션" />
+                <span class="collection_title">WATCH</span>
+              </a>
+            </li>
 
-            <button
-            type="button"
-            class="category_btn"
-            data-category="watch"
-            aria-pressed="false"
-            aria-controls="featured_list"
-            >
-              워치
-            </button>
+            <li class="collection_item">
+              <a href="./pages/product.html?category=eyewear" class="collection_link">
+                <img src="./images/Collection_Eyewear.webp" alt="CHANEL 아이웨어 컬렉션" />
+                <span class="collection_title">EYEWEAR</span>
+              </a> 
+            </li>
 
-            <button
-            type="button"
-            class="category_btn"
-            data-category="fragrance"
-            aria-pressed="false"
-            aria-controls="featured_list"
-            >
-              향수
-            </button>
+            <li class="collection_item">
+              <a href="./pages/product.html?category=perfume" class="collection_link">
+                <img src="./images/Collection_Perfume.webp" alt="CHANEL 향수 컬렉션" />
+                <span class="collection_title">PERFUME</span>
+              </a>
+            </li>
 
-            <button
-              type="button"
-              class="category_btn"
-              data-category="makeup"
-              aria-pressed="false"
-              aria-controls="featured_list"
-            >
-             메이크업
-            </button>
+            <li class="collection_item">
+              <a href="./pages/product.html?category=makeup" class="collection_link">
+                <img src="./images/Collection_Makeup.webp" alt="CHANEL 메이크업 컬렉션" />
+                <span class="collection_title">MAKEUP</span>
+              </a>
+            </li>
 
-            <button
-              type="button"
-              class="category_btn"
-              data-category="skincare"
-              aria-pressed="false"
-              aria-controls="featured_list"
-            >
-              스킨케어
-            </button>
-          </div>
-
-          <!-- 선택한 범주의 추천 상품을 JS로 삽입 -->
-          <div class="products_carousel">
-            <button
-              type="button"
-              class="products_prev"
-              aria-label="이전 상품 보기"
-              aria-controls="featured_list"
-            >
-              <i class="fa-solid fa-chevron-left"></i>
-            </button>
-
-            <!-- 상품이 보이는 영역 -->
-            <div class="products_viewport">
-              <ul class="products_list" id="featured_list" aria-live="polite"></ul>
-            </div>
-
-            <button
-              type="button"
-              class="products_next"
-              aria-label="다음 상품 보기"
-              aria-controls="featured_list"
-            >
-              <i class="fa-solid fa-chevron-right"></i>
-            </button>
-          </div>
-
-          <!-- 선택한 범주의 전체 상품 페이지로 이동 -->
-           <a href="./pages/products.html?category=clothing" class="products_more">
-            패션 전체 보기
-           </a>
+            <li class="collection_item">
+              <a href="./pages/product.html?category=skincare" class="collection_link">
+                <img src="./images/Collection_Skincare.webp" alt="CHANEL 스킨케어 컬렉션" />
+                <span class="collection_title">SKINCARE</span>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
@@ -323,6 +279,7 @@
     <!-- js -->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://kit.fontawesome.com/1f1be3aed3.js" crossorigin="anonymous"></script>
+    <script src="./js/collection.js"></script>
     <script src="./js/navigation.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/main.js"></script>

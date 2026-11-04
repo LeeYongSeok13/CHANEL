@@ -296,13 +296,42 @@
     pointer-events: auto;
   }
 
-  /* 상품 목록 */
-  .products_list {
-    gap: 2rem;
+  /* Collection 섹션 */
+  .collection_list {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 1rem;
+    overflow: visible;
   }
 
-  .product_card {
-    flex-basis: calc((100% - 2rem) / 2);
+  .collection_item {
+    flex: none;
+    width: 100%;
+    height: 12rem;
+  }
+
+  .collection_item:hover,
+  .collection_item:focus-within {
+    flex: none;
+  }
+
+  .collection_link {
+    width: 100%;
+    height: 100%;
+  }
+
+  .collection_link img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 25%;
+    transform: none;
+  }
+
+  .collection_item:hover img,
+  .collection_item:focus-within img {
+    transform: none;
   }
 }
 
