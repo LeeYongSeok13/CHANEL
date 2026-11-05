@@ -7,6 +7,12 @@
   background: var(--color-white);
 }
 
+/* 공통 헤더를 불러오는 동안 페이지의 세로 위치가 튀지 않도록 공간 확보 */
+#site-header-placeholder {
+  min-height: calc(var(--header-height) + 56px);
+  background: var(--color-white);
+}
+
 .header_inner {
   position: relative;
 
@@ -24,9 +30,10 @@
 .logo {
   position: absolute;
 
+  top: 50%;
   left: 50%;
 
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 
   font-size: 1.75rem;
   font-weight: 600;
@@ -36,7 +43,9 @@
 .header_util {
   position: absolute;
 
+  top: 50%;
   right: 40px;
+  transform: translateY(-50%);
 
   display: flex;
   align-items: center;
@@ -65,8 +74,9 @@
 
 /* 메인 네비게이션 */
 .main_nav {
+  position: relative;
+  z-index: 100;
   width: 100%;
-
   background: var(--color-white);
   border-top: 1px solid rgba(0, 0, 0, 0.06);
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
@@ -86,8 +96,6 @@
 }
 
 .nav_list > li {
-  position: relative;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -156,10 +164,6 @@
   display: none;
 }
 
-.mobile_drawer_nav {
-  display: none;
-}
-
 .nav_menu_toggle_input:checked ~ #header .mobile_nav_toggle span:nth-child(2) {
   transform: translateY(6px) rotate(45deg);
 }
@@ -170,12 +174,6 @@
 
 .nav_menu_toggle_input:checked ~ #header .mobile_nav_toggle span:nth-child(4) {
   transform: translateY(-6px) rotate(-45deg);
-}
-
-/* 하위 메뉴의 위치 기준 */
-.main_nav {
-  position: relative;
-  z-index: 100;
 }
 
 /* 하위 메뉴가 main_nav 너비를 기준으로 펼쳐지도록 설정 */
@@ -225,10 +223,157 @@
   transition: color 0.25s ease;
 }
 
-/* 마우스와 키보드 모두 대응 */
-.nav_item:hover > .submenu,
-.nav_item:focus-within > .submenu {
+@media (min-width: 769px) {
+  #header {
+    position: sticky;
+    top: 0;
+    z-index: var(--z-menu-toggle);
+  }
+
+  .main_nav {
+    position: sticky;
+    top: var(--header-height);
+    z-index: var(--z-header);
+  }
+
+  /* 데스크톱에서 마우스와 키보드로 하위 메뉴 열기 */
+  .nav_item:hover > .submenu,
+  .nav_item:focus-within > .submenu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+
+.search_panel {
+  position: fixed;
+  top: calc(var(--header-height) + 16px);
+  left: 50%;
+  z-index: calc(var(--z-menu-toggle) + 1);
+
+  width: min(720px, calc(100vw - 32px));
+  padding: 26px 30px 22px;
+
+  color: var(--color-text);
+  background: var(--color-white);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.18);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translate(-50%, -12px);
+  transition: opacity 0.22s ease, transform 0.28s ease, visibility 0.28s ease;
+}
+
+.search_panel.is_open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  transform: translate(-50%, 0);
+}
+
+.search_panel_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search_panel_eyebrow {
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}
+
+.search_close {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--color-text);
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.search_form {
+  margin-top: 14px;
+}
+
+.search_input_row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid var(--color-black);
+}
+
+.search_input_row input {
+  flex: 1;
+  min-width: 0;
+  padding: 14px 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--color-text);
+  font: inherit;
+  font-size: 1rem;
+}
+
+.search_input_row input::placeholder {
+  color: #888;
+}
+
+.search_input_row:focus-within {
+  border-bottom-color: var(--color-gold);
+}
+
+.search_submit {
+  flex: none;
+  padding: 10px 0 10px 12px;
+  border: 0;
+  background: transparent;
+  color: var(--color-black);
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.search_submit span {
+  margin-left: 8px;
+  color: var(--color-gold);
+}
+
+.search_panel_hint {
+  margin: 12px 0 0;
+  color: #777;
+  font-size: 0.75rem;
+}
+
+.search_panel :focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+  .search_panel {
+    top: calc(var(--header-height) + 10px);
+    width: calc(100vw - 24px);
+    padding: 20px 18px 18px;
+  }
+
+  .search_input_row {
+    gap: 8px;
+  }
+
+  .search_input_row input {
+    font-size: 0.9rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .search_panel {
+    transition: none;
+  }
 }

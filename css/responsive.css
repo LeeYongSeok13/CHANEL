@@ -22,6 +22,10 @@
 
 
 @media (max-width: 768px) {
+  #site-header-placeholder {
+    min-height: var(--header-height);
+  }
+
   /* 모바일 헤더 */
   .nav_menu_toggle_input {
     display: block;
@@ -356,6 +360,7 @@
 
   .header_util {
     position: static;
+    transform: none;
     gap: 12px;
   }
 

@@ -3,10 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Products</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
-    
-    <script type="module" src="../js/products.js"></script>
-</body>
+
+    <!-- Header 영역 -->
+    <div id="site-header-placeholder"></div>
+
+    <main class="products_page">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="현재 위치">
+        <a href="../index.html">홈</a>
+        <span aria-hidden="true">/</span>
+        <span id="breadcrumb_category">컬렉션</span>
+      </nav>
+
+      <header class="products_header">
+        <h1 id="products_title">컬렉션</h1>
+        <p id="products_description"></p>
+      </header>
+
+      <div class="products_toolbar">
+        <p id="products_count" aria-live="polite"></p>
+
+        <label for="products_sort">정렬</label>
+        <select id="products_sort">
+          <option value="recommended">추천순</option>
+          <option value="name">이름순</option>
+        </select>
+      </div>
+
+      <section
+        id="product_grid"
+        class="product_grid"
+        aria-label="상품 목록"
+        aria-live="polite"
+      ></section>
+
+      <p id="products_empty" hidden>표시할 상품이 없습니다.</p>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="../js/header-loader.js"></script>
+</body> 
 </html>

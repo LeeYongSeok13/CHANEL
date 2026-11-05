@@ -18,6 +18,10 @@
   transition: transform 1s ease;
 }
 
+html.intro_seen #intro {
+  display: none;
+}
+
 #intro.hide {
   transform: translateX(-100%);
 }
