@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CHANEL</title>
     <!-- favicon -->
-    <link rel="favicon" href="./images/favicon.png"/>
+    <link rel="icon" href="./images/favicon.png"/>
 
     <!-- css -->
     <link rel="stylesheet" href="./css/reset.css" />
@@ -76,7 +76,7 @@
             <a href="./pages/products.html?category=clothing">패션</a>
             <button type="button" class="mobile_submenu_toggle" aria-expanded="false" aria-controls="fashion_submenu">패션</button>
 
-            <!-- 서브 메뉴 -->
+            <!-- Fashion 서브 메뉴 -->
             <div class="submenu" id="fashion_submenu">
               <div class="submenu_inner container">
                 <div class="submenu_group">
@@ -133,12 +133,232 @@
             </div>
           </li>
           
-          <li><a href="#">주얼리</a></li>
-          <li><a href="#">워치</a></li>
-          <li><a href="#">아이웨어</a></li> 
-          <li><a href="#">향수</a></li>
-          <li><a href="#">메이크업</a></li>
-          <li><a href="#">스킨케어</a></li>
+          <li class="nav_item">
+            <a href="./pages/products.html?category=jewelry" data-category="jewelry">주얼리</a>
+            <button type="button" class="mobile_submenu_toggle" aria-expanded="false" aria-controls="jewelry_submenu">주얼리</button>
+
+            <!-- Jewelry 서브메뉴 -->
+            <div class="submenu" id="jewelry_submenu">
+              <div class="submenu_inner container">
+                <div class="submenu_group">
+                  <h2>
+                    <button
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="fine_jewelry_submenu">
+                      파인 주얼리
+                    </button>
+                  </h2>
+                  <ul id="fine_jewelry_submenu" hidden>
+                    <li><a href="#" data-category="jewelry" data-subcategory="fine">전체 보기</a></li>
+                    <li><a href="#" data-category="jewelry" data-subcategory="ring">링</a></li>
+                    <li><a href="#" data-category="jewelry" data-subcategory="necklace">네크리스</a></li>
+                    <li><a href="#" data-category="jewelry" data-subcategory="bracelet">브레이슬릿</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav_item">
+            <a href="./pages/products.html?category=watch" data-category="watch">워치</a>
+            <button type="button" class="mobile_submenu_toggle" aria-expanded="false" aria-controls="watch_submenu">워치</button>
+
+            <!-- Watch 서브 메뉴 -->
+            <div class="submenu" id="watch_submenu">
+              <div class="submenu_inner container">
+                <div class="submenu_group">
+                  <h2>
+                    <button
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="watches_submenu">
+                      워치
+                    </button>
+                  </h2>
+                  <ul id="watches_submenu" hidden>
+                    <li><a href="#" data-category="watch">전체 보기</a></li>
+                    <li><a href="#" data-category="watch" data-subcategory="j12">J12</a></li>
+                    <li><a href="#" data-category="watch" data-subcategory="premiere">프리미에르</a></li>
+                    <li><a href="#" data-category="watch" data-subcategory="boyfriend">보이프렌드</a></li>
+                    <li><a href="#" data-category="watch" data-subcategory="codecoco">Code Coco</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav_item">
+            <a href="./pages/products.html?category=eyewear" data-category="eyewear">아이웨어</a>
+            <button type="button" class="mobile_submenu_toggle" aria-expanded="false" aria-controls="eyewear_submenu">아이웨어</button>
+
+            <!-- Eyewear 서브 메뉴 -->
+            <div class="submenu" id="eyewear_submenu">
+              <div class="submenu_inner container">
+                <div class="submenu_group">
+                  <h2>
+                    <button
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="sunglasses_submenu">
+                      선글라스
+                    </button>
+                  </h2>
+                  <ul id="sunglasses_submenu" hidden>
+                    <li><a href="#" data-category="eyewear" data-subcategory="sunglasses">전체 보기</a></li>
+                    <li><a href="#" data-category="eyewear" data-subcategory="cat-eye">캣아이</a></li>
+                    <li><a href="#" data-category="eyewear" data-subcategory="square">스퀘어</a></li>
+                  </ul>
+                </div>
+
+                <div class="submenu_group">
+                  <h2>
+                    <button
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="optical_submenu">
+                      옵티컬
+                    </button>
+                  </h2>
+                  <ul id="optical_submenu" hidden>
+                    <li><a href="#" data-category="eyewear" data-subcategory="optical">전체 보기</a></li>
+                    <li><a href="#" data-category="eyewear" data-subcategory="cat-eye">캣아이</a></li>
+                    <li><a href="#" data-category="eyewear" data-subcategory="square">스퀘어</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav_item">
+            <a href="./pages/products.html?category=perfume" data-category="perfume">향수</a>
+            <button type="button" class="mobile_submenu_toggle" aria-expanded="false" aria-controls="perfume_submenu">향수</button>
+
+            <!-- Perfume 서브 메뉴 -->
+            <div class="submenu" id="perfume_submenu">
+              <div class="submenu_inner container">
+                <div class="submenu_group">
+                  <h2>
+                    <button
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="female_perfume_submenu">
+                      여성 향수
+                    </button>
+                  </h2>
+                  <ul id="female_perfume_submenu" hidden>
+                    <li><a href="#" data-category="perfume">전체 보기</a></li>
+                    <li><a href="#" data-category="perfume" data-subcategory="coco">코코</a></li>
+                    <li><a href="#" data-category="perfume" data-subcategory="bleu">블루 드 샤넬</a></li>
+                  </ul>
+                </div>
+
+                <div class="submenu_group">
+                  <h2>
+                    <button
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="male_perfume_submenu">
+                      남성 향수
+                    </button>
+                  </h2>
+                  <ul id="male_perfume_submenu" hidden>
+                    <li><a href="#" data-category="perfume">전체 보기</a></li>
+                    <li><a href="#" data-category="perfume" data-subcategory="bleu">블루 드 샤넬</a></li>
+                    <li><a href="#" data-category="perfume" data-subcategory="allure">알뤼르 옴므</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav_item">
+            <a href="./pages/products.html?category=makeup" data-category="makeup">메이크업</a>
+            <button type="button" class="mobile_submenu_toggle" aria-expanded="false" aria-controls="makeup_submenu">메이크업</button>
+
+            <!-- Makeup 서브 메뉴 -->
+            <div class="submenu" id="makeup_submenu">
+              <div class="submenu_inner container">
+                <div class="submenu_group">
+                  <h2>
+                    <button
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="face_makeup_submenu">
+                      페이스
+                    </button>
+                  </h2>
+                  <ul id="face_makeup_submenu" hidden>
+                    <li><a href="#" data-category="makeup">전체 보기</a></li>
+                    <li><a href="#" data-category="makeup" data-subcategory="foundation">파운데이션</a></li>
+                    <li><a href="#" data-category="makeup" data-subcategory="blush">블러셔</a></li>
+                    <li><a href="#" data-category="makeup" data-subcategory="concealer">컨실러</a></li>
+                    <li><a href="#" data-category="makeup" data-subcategory="powder">파우더</a></li>
+                  </ul>
+                </div>
+
+                <div class="submenu_group">
+                  <h2>
+                    <button
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="eye_makeup_submenu">
+                      아이
+                    </button>
+                  </h2>
+                  <ul id="eye_makeup_submenu" hidden>
+                    <li><a href="#" data-category="makeup">전체 보기</a></li>
+                    <li><a href="#" data-category="makeup" data-subcategory="eyeshadow">아이섀도우</a></li>
+                    <li><a href="#" data-category="makeup" data-subcategory="mascara">마스카라</a></li>
+                  </ul>
+                </div>
+
+                <div class="submenu_group">
+                  <h2>
+                    <button
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="lip_makeup_submenu">
+                      립
+                    </button>
+                  </h2>
+                  <ul id="lip_makeup_submenu" hidden>
+                    <li><a href="#" data-category="makeup">전체 보기</a></li>
+                    <li><a href="#" data-category="makeup" data-subcategory="lipstick">립스틱</a></li>
+                    <li><a href="#" data-category="makeup" data-subcategory="lipgloss">립글로스</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav_item">
+            <a href="./pages/products.html?category=skincare" data-category="skincare">스킨케어</a>
+            <button type="button" class="mobile_submenu_toggle" aria-expanded="false" aria-controls="skincare_submenu">스킨케어</button>
+
+            <!-- Skincare 서브 메뉴 -->
+            <div class="submenu" id="skincare_submenu">
+              <div class="submenu_inner container">
+                <div class="submenu_group">
+                  <h2>
+                    <button
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="skincare_categories_submenu">
+                      스킨케어
+                    </button>
+                  </h2>
+                  <ul id="skincare_categories_submenu" hidden>
+                    <li><a href="#" data-category="skincare">전체 보기</a></li>
+                    <li><a href="#" data-category="skincare" data-subcategory="cleanser">클렌저</a></li>
+                    <li><a href="#" data-category="skincare" data-subcategory="moisturizer">토너 / 로션</a></li>
+                    <li><a href="#" data-category="skincare" data-subcategory="serum">세럼</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
         </ul>
       </div>
     </nav>
