@@ -149,30 +149,28 @@
 }
 
 /* 모바일 메뉴 기본 상태 */
-.nav_menu_toggle_input {
-  display: none;
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-}
-
 .mobile_nav_toggle {
   display: none;
+  padding: 0;
+  border: 0;
+  background: transparent;
 }
 
 .nav_overlay {
   display: none;
+  padding: 0;
+  border: 0;
 }
 
-.nav_menu_toggle_input:checked ~ #header .mobile_nav_toggle span:nth-child(2) {
+.mobile_nav_toggle[aria-expanded="true"] span:nth-child(2) {
   transform: translateY(6px) rotate(45deg);
 }
 
-.nav_menu_toggle_input:checked ~ #header .mobile_nav_toggle span:nth-child(3) {
+.mobile_nav_toggle[aria-expanded="true"] span:nth-child(3) {
   opacity: 0;
 }
 
-.nav_menu_toggle_input:checked ~ #header .mobile_nav_toggle span:nth-child(4) {
+.mobile_nav_toggle[aria-expanded="true"] span:nth-child(4) {
   transform: translateY(-6px) rotate(-45deg);
 }
 
@@ -212,6 +210,10 @@
 .submenu_group ul {
   display: grid;
   gap: 14px;
+}
+
+.submenu_group > ul.is_open {
+  display: block;
 }
 
 .submenu_group a {

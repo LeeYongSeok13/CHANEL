@@ -1,14 +1,17 @@
-    <input type="checkbox" id="nav_menu_toggle" class="nav_menu_toggle_input" aria-label="모바일 메뉴" aria-controls="main_navigation" />
-
-    <!-- Header 영역 -->
-    <header id="header">
-      <div class="header_inner container">
-        <label for="nav_menu_toggle" class="mobile_nav_toggle">
-          <span class="visually_hidden">모바일 메뉴 열기/닫기</span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
+<!-- Header 영역 -->
+<header id="header">
+  <div class="header_inner container">
+    <button
+      type="button"
+      id="nav_menu_toggle"
+      class="mobile_nav_toggle"
+      aria-controls="main_navigation"
+      aria-expanded="false">
+        <span class="visually_hidden">모바일 메뉴</span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </button>
 
         <!-- 로고 -->
         <h1 class="logo">
@@ -77,7 +80,7 @@
                       의류
                     </button>
                   </h2>
-                  <ul id="clothing_submenu" hidden>
+                  <ul id="clothing_submenu">
                     <li><a href="/pages/product.html?category=clothing" data-category="clothing">전체 보기</a></li>
                     <li><a href="/pages/product.html?category=clothing&subcategory=outer" data-category="clothing" data-subcategory="outer">아우터</a></li>
                     <li><a href="/pages/product.html?category=clothing&subcategory=top" data-category="clothing" data-subcategory="top">탑</a></li>
@@ -95,7 +98,7 @@
                       핸드백
                     </button>
                   </h2>
-                  <ul id="handbag_submenu" hidden>
+                  <ul id="handbag_submenu">
                     <li><a href="#" data-category="handbag">전체 보기</a></li>
                     <li><a href="#" data-category="handbag" data-subcategory="flap">플랩백</a></li>
                     <li><a href="#" data-category="handbag" data-subcategory="shopping">쇼핑백</a></li>
@@ -110,7 +113,7 @@
                       슈즈
                     </button>
                   </h2>
-                  <ul id="shoes_submenu" hidden>
+                  <ul id="shoes_submenu">
                     <li><a href="#" data-category="shoes">전체 보기</a></li>
                     <li><a href="#" data-category="shoes" data-subcategory="maryjane">메리제인 슈즈</a></li>
                     <li><a href="#" data-category="shoes" data-subcategory="mule">뮬</a></li>
@@ -138,7 +141,7 @@
                       파인 주얼리
                     </button>
                   </h2>
-                  <ul id="fine_jewelry_submenu" hidden>
+                  <ul id="fine_jewelry_submenu">
                     <li><a href="#" data-category="jewelry" data-subcategory="fine">전체 보기</a></li>
                     <li><a href="#" data-category="jewelry" data-subcategory="ring">링</a></li>
                     <li><a href="#" data-category="jewelry" data-subcategory="necklace">네크리스</a></li>
@@ -165,7 +168,7 @@
                       워치
                     </button>
                   </h2>
-                  <ul id="watches_submenu" hidden>
+                  <ul id="watches_submenu">
                     <li><a href="#" data-category="watch">전체 보기</a></li>
                     <li><a href="#" data-category="watch" data-subcategory="j12">J12</a></li>
                     <li><a href="#" data-category="watch" data-subcategory="premiere">프리미에르</a></li>
@@ -193,7 +196,7 @@
                       선글라스
                     </button>
                   </h2>
-                  <ul id="sunglasses_submenu" hidden>
+                  <ul id="sunglasses_submenu">
                     <li><a href="#" data-category="eyewear" data-subcategory="sunglasses">전체 보기</a></li>
                     <li><a href="#" data-category="eyewear" data-subcategory="cat-eye">캣아이</a></li>
                     <li><a href="#" data-category="eyewear" data-subcategory="square">스퀘어</a></li>
@@ -209,7 +212,7 @@
                       옵티컬
                     </button>
                   </h2>
-                  <ul id="optical_submenu" hidden>
+                  <ul id="optical_submenu">
                     <li><a href="#" data-category="eyewear" data-subcategory="optical">전체 보기</a></li>
                     <li><a href="#" data-category="eyewear" data-subcategory="cat-eye">캣아이</a></li>
                     <li><a href="#" data-category="eyewear" data-subcategory="square">스퀘어</a></li>
@@ -235,7 +238,7 @@
                       여성 향수
                     </button>
                   </h2>
-                  <ul id="female_perfume_submenu" hidden>
+                  <ul id="female_perfume_submenu">
                     <li><a href="#" data-category="perfume">전체 보기</a></li>
                     <li><a href="#" data-category="perfume" data-subcategory="coco">코코</a></li>
                     <li><a href="#" data-category="perfume" data-subcategory="bleu">블루 드 샤넬</a></li>
@@ -251,7 +254,7 @@
                       남성 향수
                     </button>
                   </h2>
-                  <ul id="male_perfume_submenu" hidden>
+                  <ul id="male_perfume_submenu">
                     <li><a href="#" data-category="perfume">전체 보기</a></li>
                     <li><a href="#" data-category="perfume" data-subcategory="bleu">블루 드 샤넬</a></li>
                     <li><a href="#" data-category="perfume" data-subcategory="allure">알뤼르 옴므</a></li>
@@ -277,7 +280,7 @@
                       페이스
                     </button>
                   </h2>
-                  <ul id="face_makeup_submenu" hidden>
+                  <ul id="face_makeup_submenu">
                     <li><a href="#" data-category="makeup">전체 보기</a></li>
                     <li><a href="#" data-category="makeup" data-subcategory="foundation">파운데이션</a></li>
                     <li><a href="#" data-category="makeup" data-subcategory="blush">블러셔</a></li>
@@ -295,7 +298,7 @@
                       아이
                     </button>
                   </h2>
-                  <ul id="eye_makeup_submenu" hidden>
+                  <ul id="eye_makeup_submenu">
                     <li><a href="#" data-category="makeup">전체 보기</a></li>
                     <li><a href="#" data-category="makeup" data-subcategory="eyeshadow">아이섀도우</a></li>
                     <li><a href="#" data-category="makeup" data-subcategory="mascara">마스카라</a></li>
@@ -311,7 +314,7 @@
                       립
                     </button>
                   </h2>
-                  <ul id="lip_makeup_submenu" hidden>
+                  <ul id="lip_makeup_submenu">
                     <li><a href="#" data-category="makeup">전체 보기</a></li>
                     <li><a href="#" data-category="makeup" data-subcategory="lipstick">립스틱</a></li>
                     <li><a href="#" data-category="makeup" data-subcategory="lipgloss">립글로스</a></li>
@@ -337,7 +340,7 @@
                       스킨케어
                     </button>
                   </h2>
-                  <ul id="skincare_categories_submenu" hidden>
+                  <ul id="skincare_categories_submenu">
                     <li><a href="#" data-category="skincare">전체 보기</a></li>
                     <li><a href="#" data-category="skincare" data-subcategory="cleanser">클렌저</a></li>
                     <li><a href="#" data-category="skincare" data-subcategory="moisturizer">토너 / 로션</a></li>
@@ -351,5 +354,9 @@
         </ul>
       </div>
     </nav>
-
-    <label for="nav_menu_toggle" class="nav_overlay"><span class="visually_hidden">메뉴 닫기</span></label>
+<button
+  type="button"
+  class="nav_overlay"
+  aria-label="메뉴 닫기"
+  tabindex="-1"
+></button>

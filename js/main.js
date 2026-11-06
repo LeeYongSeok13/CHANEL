@@ -1,30 +1,38 @@
 const intro = document.querySelector("#intro");
 const enterBtn = document.querySelector(".enter_btn");
 
-const introShown = sessionStorage.getItem("introShown");
+let introShown = false;
 
-if (intro && enterBtn) {
-  // Enter 버튼을 누르면 방문 기록을 저장하고 인트로를 숨김
-  enterBtn.addEventListener("click", () => {
-    sessionStorage.setItem("introShown", "true");
+try {
+  introShown = sessionStorage.getItem("introShown") === "true";
+} catch (error) {
+  console.warn("방문 기록을 읽지 못해 인트로를 표시합니다.", error);
+}
 
-    intro.classList.add("hide");
+if(intro && enterBtn) {
+  if (introShown) {
+  intro.style.display = "none";
+  startSlider();
+  } else {
+    enterBtn.addEventListener("click", () => {
+      try {
+        sessionStorage.setItem("introShown", "true");
+      } catch (error) {
+        console.warn("방문 기록을 저장하지 못했습니다.", error);
+      }
 
-    // 인트로가 화면에서 사라진 뒤 슬라이더 시작
-    intro.addEventListener("transitionend", function onIntroHidden(event) {
-      if (event.propertyName !== "transform") return;
+      intro.addEventListener("transitioned", function onIntroHidden(event) {
+        if (event.target !== intro || event.propertyName !== "transform") {
+          return;
+        }
 
-      intro.removeEventListener("transitionend", onIntroHidden);
-      intro.style.display = "none";
-      
-      startSlider();
-    });
-  }, { once: true}
-);
+        intro.removeEventListener("transitionend", onIntroHidden);
 
-  // 이 세션에서 이미 인트로를 봤다면 바로 슬라이더 시작
-  if (introShown === "true") {
-    intro.style.display = "none";
-    startSlider();
+        intro.style.display = "none";
+        startSlider();
+      });
+
+      intro.classList.add("hide");
+    }, {once: true});
   }
 }
