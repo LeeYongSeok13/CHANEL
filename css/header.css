@@ -238,12 +238,23 @@
     z-index: var(--z-header);
   }
 
+  .submenu {
+    transform: translateY(-12px);
+
+    transition:
+      opacity 0.25s ease,
+      transform 0.3s ease,
+      visibility 0.3s ease;
+  }
+
+
   /* 데스크톱에서 마우스와 키보드로 하위 메뉴 열기 */
   .nav_item:hover > .submenu,
   .nav_item:focus-within > .submenu {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    transform: translateY(0);
   }
 }
 
