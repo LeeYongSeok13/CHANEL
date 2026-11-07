@@ -21,7 +21,7 @@ if(intro && enterBtn) {
         console.warn("방문 기록을 저장하지 못했습니다.", error);
       }
 
-      intro.addEventListener("transitioned", function onIntroHidden(event) {
+      intro.addEventListener("transitionend", function onIntroHidden(event) {
         if (event.target !== intro || event.propertyName !== "transform") {
           return;
         }
