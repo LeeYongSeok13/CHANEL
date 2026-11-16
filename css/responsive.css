@@ -352,6 +352,23 @@
   .collection_item:focus-within img {
     transform: none;
   }
+
+  .footer_content {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .footer_navigation,
+  .footer_content > .footer_service {
+    flex: 1 1 calc((100% - 32px) / 2);
+    text-align: center;
+  }
+
+  .footer_description {
+    flex: 0 0 100%;
+    padding-top: 28px;
+    border-top: 1px solid #333;
+  }
 }
 
 @media (max-width: 480px) {

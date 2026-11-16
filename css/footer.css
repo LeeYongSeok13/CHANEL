@@ -1,0 +1,45 @@
+#footer {
+    background: var(--bg-dark);
+    color: var(--text-light);
+}
+
+.footer_inner {
+    padding: 60px 40px 40px;
+}
+
+.footer_logo {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 50px;
+
+    font-family: Arial, sans-serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.12em;
+}
+
+.footer_content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.footer_navigation,
+.footer_content > .footer_service {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.footer_description {
+    flex: 2 1 0;
+    min-width: 0;
+}
+
+.footer_description p {
+    color: #aaa;
+    font-size: 0.75rem;
+    line-height: 1.9;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+}
