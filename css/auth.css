@@ -1,0 +1,231 @@
+.auth_panel {
+    box-sizing: border-box;
+    position: fixed;
+    inset: 0 0 0 auto;
+
+    width: min(460px, 100%);
+    height: 100dvh;
+    max-width: 100%;
+    max-height: 100dvh;
+    margin: 0;
+    padding: 30px;
+
+    overflow-y: auto;
+    color: var(--color-text);
+    background: var(--color-white);
+    border: 0;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: -18px 0 55px rgba(0, 0, 0, 0.18);
+}
+
+.auth_panel[open] {
+    animation: authSlideIn 0.35s ease-out;
+}
+
+.auth_panel::backdrop {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.auth_panel[open]::backdrop {
+    animation: authBackdropIn 0.35s ease-out;
+}
+
+.auth_panel_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.auth_panel_eyebrow {
+    margin: 0;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+}
+
+.auth_panel button,
+.auth_panel input {
+    font: inherit;
+}
+
+.auth_close {
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    
+    color: var(--color-text);
+    background: transparent;
+    border: 0;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.auth_login {
+    margin-top: 48px;
+}
+
+.auth_title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.auth_description {
+    margin: 14px 0 0;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    line-height: 1.7;
+}
+
+.auth_form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 36px;
+}
+
+.auth_field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.auth_field label {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.auth_field input {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    padding: 14px 0;
+
+    color: var(--color-text);
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--color-black);
+    border-radius: 0;
+    font-size: 0.9rem;
+    transition: border-color 0.2s ease;
+}
+
+.auth_field input::placeholder {
+    color: #888;
+}
+
+.auth_field input:focus {
+    border-bottom-color: var(--color-gold);
+}
+
+.auth_panel :focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 3px;
+}
+
+.auth_forgot {
+    align-self: flex-end;
+    padding: 4px 0;
+
+    color: var(--text-secondary);
+    background: transparent;
+    border: 0;
+    font-size: 0.75rem;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    cursor: pointer;
+}
+
+.auth_submit,
+.auth_signup_btn {
+    width: 100%;
+    min-height: 50px;
+    padding: 14px 20px;
+
+    border: 1px solid var(--color-black);
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.auth_submit {
+    color: var(--color-white);
+    background: var(--color-black);
+}
+
+.auth_submit:hover {
+    background: #333;
+    border-color: #333;
+}
+
+.auth_signup_guide {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid var(--color-border);
+}
+
+.auth_signup_guide p {
+    margin: 0 0 18px;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.auth_signup_btn {
+    color: var(--color-black);
+    background: var(--color-white);
+}
+
+.auth_signup_btn:hover {
+    background: var(--color-gray);
+}
+
+@media (max-width: 480px) {
+  .auth_panel {
+    padding: 22px 20px;
+  }
+
+  .auth_login {
+    margin-top: 32px;
+  }
+
+  .auth_form {
+    margin-top: 28px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .auth_panel input,
+    .auth_panel button {
+        transition: none;
+    }
+}
+
+@keyframes authSlideIn {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes authBackdropIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

@@ -16,6 +16,7 @@ async function loadHeader() {
 
     await loadScript("/js/navigation.js");
     await loadScript("/js/header-search.js");
+    await loadScript("/js/auth.js");
   } catch(error) {
     console.error("공통 헤더를 불러오지 못했습니다.", error);
   }

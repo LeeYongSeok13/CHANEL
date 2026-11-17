@@ -23,8 +23,12 @@
           <button type="button" class="util_btn search_btn" aria-label="검색" aria-controls="search_panel" aria-expanded="false">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
-          <button class="util_btn login_btn" aria-label="로그인">
-            <i class="fa-regular fa-user"></i>
+          <button class="util_btn login_btn"
+          aria-label="로그인"
+          aria-controls="auth_panel"
+          aria-expanded="false"
+          >
+            <i class="fa-regular fa-user" aria-hidden="true"></i>
           </button>
           <button class="util_btn favorite_btn" aria-label="즐겨찾기">
             <i class="fa-regular fa-heart"></i>
@@ -60,6 +64,70 @@
 
       <p class="search_panel_hint">예: 가방, 향수, 스킨케어</p>
     </section>
+
+    <!-- 로그인 / 회원가입 패널 -->
+    <dialog id="auth_panel" class="auth_panel" aria-labelledby="auth_title">
+      <div class="auth_panel_header">
+        <p class="auth_panel_eyebrow">CHANEL ACCOUNT</p>
+
+        <button
+        type="button"
+        class="auth_close"
+        aria-label="로그인 창 닫기"
+        >
+        <span aria-hidden="true">x</span>
+      </button>
+      </div>
+
+      <!-- 로그인 화면 -->
+      <div class="auth_login">
+        <h2 id="auth_title" class="auth_title">로그인</h2>
+        <p class="auth_description">
+          샤넬 계정으로 로그인해주세요.
+        </p>
+
+        <form id="login_form" class="auth_form">
+          <div class="auth_field">
+            <label for="login_email">이메일</label>
+            <input
+            type="email"
+            id="login_email"
+            name="email"
+            autocomplete="username"
+            placeholder="이메일을 입력해주세요"
+            required
+            >
+          </div>
+
+          <div class="auth_field">
+            <label for="login_password">비밀번호</label>
+              <input
+              type="password"
+              id="login_password"
+              name="password"
+              autocomplete="current-password"
+              placeholder="비밀번호를 입력해주세요"
+              required
+              />
+          </div>
+
+          <button type="button" class="auth_forgot">
+            비밀번호를 잊으셨나요?
+          </button>
+
+          <button type="submit" class="auth_submit">
+            로그인
+          </button>
+        </form>
+
+        <div class="auth_signup_guide">
+          <p>아직 샤넬 계정이 없으신가요?</p>
+          <button type="button" class="auth_signup_btn">
+            회원가입
+          </button>
+        </div>
+      </div>
+    </dialog>
 
     <nav id="main_navigation" class="main_nav" aria-label="메인 네비게이션">
       <div class="nav_inner container">
