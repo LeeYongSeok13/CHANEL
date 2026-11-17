@@ -22,12 +22,24 @@
     animation: authSlideIn 0.35s ease-out;
 }
 
+.auth_panel[open].is_closing {
+  animation: authSlideOut 0.3s ease-in forwards;
+}
+
 .auth_panel::backdrop {
     background: rgba(0, 0, 0, 0.3);
 }
 
 .auth_panel[open]::backdrop {
     animation: authBackdropIn 0.35s ease-out;
+}
+
+.auth_panel[open].is_closing::backdrop {
+  animation: authBackdropOut 0.3s ease-in forwards;
+}
+
+.auth_panel [hidden] {
+    display: none;
 }
 
 .auth_panel_header {
@@ -64,7 +76,8 @@
     cursor: pointer;
 }
 
-.auth_login {
+.auth_login, 
+.auth_signup {
     margin-top: 48px;
 }
 
@@ -189,12 +202,70 @@
     background: var(--color-gray);
 }
 
+.auth_login_btn {
+    width: 100%;
+    min-height: 50px;
+    padding: 14px 20px;
+
+    color: var(--color-black);
+    background: var(--color-white);
+    border: 1px solid var(--color-black);
+
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+}
+
+.auth_login_btn:hover {
+    background: var(--color-gray);
+}
+
+.auth_demo_btn {
+    width: 100%;
+    min-height: 50px;
+    margin-top: 16px;
+    padding: 14px 20px;
+
+    color: var(--color-text);
+    background: var(--color-gray);
+    border: 1px solid var(--color-border);
+
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.auth_demo_btn:hover {
+    background: var(--color-white);
+    border-color: var(--color-gold);
+}
+
+.auth_demo_hint {
+    margin: 12px 0 0;
+
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.login_btn.is_logged_in {
+    color: var(--color-gold);
+}
+
 @media (max-width: 480px) {
   .auth_panel {
     padding: 22px 20px;
   }
 
-  .auth_login {
+  .auth_login
+  .auth_signup {
     margin-top: 32px;
   }
 
@@ -204,10 +275,17 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .auth_panel input,
-    .auth_panel button {
-        transition: none;
-    }
+  .auth_panel input,
+  .auth_panel button {
+    transition: none;
+  }
+
+  .auth_panel[open],
+  .auth_panel[open]::backdrop,
+  .auth_panel[open].is_closing,
+  .auth_panel[open].is_closing::backdrop {
+    animation: none;
+  }
 }
 
 @keyframes authSlideIn {
@@ -228,4 +306,24 @@
     to {
         opacity: 1;
     }
+}
+
+@keyframes authSlideOut {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes authBackdropOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
 }
