@@ -621,5 +621,49 @@
                 "alt": "쇼핑백-001 이미지"
             }
         ]
+    },
+    {
+        "id": "shoppingbag-002",
+        "category": "handbag",
+        "subcategory": "shoppingbag",
+        "name": "쇼핑백-002",
+        "price": 15650000,
+        "description": "컬렉션의 백은 자연스러운 톤부터 오묘한 파스텔 색조까지 이어지는 팔레트를 바탕으로 형태와 소재를 다양하게 변주합니다.",
+        "images": [
+            {
+                "src": "./images/fashion/shoppingbag-002(1).webp",
+                "alt": "쇼핑백-002 이미지"
+            },
+            {
+                "src": "./images/fashion/shoppingbag-002(2).webp",
+                "alt": "쇼핑백-002 이미지"
+            },
+            {
+                "src": "./images/fashion/shoppingbag-003(3).webp",
+                "alt": "쇼핑백-002 이미지"
+            }
+        ]
+    },
+    {
+        "id": "shoppingbag-003",
+        "category": "handbag",
+        "subcategory": "shoppingbag",
+        "name": "쇼핑백-003",
+        "price": 15650000,
+        "description": "컬렉션의 백은 자연스러운 톤부터 오묘한 파스텔 색조까지 이어지는 팔레트를 바탕으로 형태와 소재를 다양하게 변주합니다.",
+        "images": [
+            {
+                "src": "./images/fashion/shoppingbag-003(1).webp",
+                "alt": "쇼핑백-003 이미지"
+            },
+            {
+                "src": "./images/fashion/shoppingbag-003(2).webp",
+                "alt": "쇼핑백-003 이미지"
+            }
+            {
+                "src": "./images/fashion/shoppingbag-003(3).webp",
+                "alt": "쇼핑백-003 이미지"
+            }
+        ]
     }
 ]

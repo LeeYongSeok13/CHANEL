@@ -134,7 +134,7 @@ signupForm.addEventListener("submit", (event) => {
 
     if(!signupForm.reportValidity()) return;
 
-    alert("입력값 검사를 통과했습니다. 아직 회원가입 정보는 저장되지 않았습니다.")
+    alert("입력 조건을 충족했습니다.\n" + "이 사이트는 실제 회원가입은 지원하지 않으니 '데모 로그인'을 활용하여 체험해주시기 바랍니다.")
 });
 
 authPanel.addEventListener("animationend", (event) => {
