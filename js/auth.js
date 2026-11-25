@@ -12,6 +12,8 @@ const backToLoginButton = document.querySelector(".auth_login_btn");
 const signupName = document.querySelector("#signup_name");
 const signupPassword = document.querySelector("#signup_password");
 const signupPasswordConfirm = document.querySelector("#signup_password_confirm");
+const accountView = document.querySelector(".auth_account");
+const logoutButton = document.querySelector(".auth_logout_btn");
 
 function validateSignupPassword() {
     const password = signupPassword.value;
@@ -26,14 +28,20 @@ function validateSignupPassword() {
 
 function setAuthView(view) {
     const isSignup = view === "signup";
+    const isAccount = view === "account";
 
-    loginView.hidden = isSignup;
+    loginView.hidden = isSignup || isAccount;
     signupview.hidden = !isSignup;
+    accountView.hidden = !isAccount;
 
     if(isSignup) {
         authPanel.setAttribute("aria-labelledby", "signup_title");
         authCloseButton.setAttribute("aria-label", "회원가입 창 닫기");
         signupName.focus();
+    } else if (isAccount) {
+        authPanel.setAttribute("aria-labelledby", "account_title");
+        authCloseButton.setAttribute("aria-label", "계정 창 닫기");
+        logoutButton.focus();
     } else {
         authPanel.setAttribute("aria-labelledby", "auth_title");
         authCloseButton.setAttribute("aria-label", "로그인 창 닫기");
@@ -67,7 +75,8 @@ function setAuthOpen(open) {
 
         authPanel.showModal();
         loginButton.setAttribute("aria-expanded", "true");
-        setAuthView("login");
+
+        setAuthView(isDemoLoggedIn ? "account" : "login");
     } else {
         closeAuthPanel();
     }
@@ -91,16 +100,32 @@ loginForm.addEventListener("submit", (event) => {
     event.preventDefault();
 })
 
-let isDemoLoggedIn = false;
+let isDemoLoggedIn = sessionStorage.getItem("isDemoLoggedIn") === "true";
+
+if (isDemoLoggedIn) {
+    loginButton.setAttribute("aria-label", "데모 계정");
+    loginButton.classList.add("is_logged_in");
+}
 
 demoLoginButton.addEventListener("click", () => {
     isDemoLoggedIn = true;
+    sessionStorage.setItem("isDemoLoggedIn", "true");
 
     loginButton.setAttribute("aria-label", "데모 계정");
     loginButton.classList.add("is_logged_in");
 
     setAuthOpen(false);
-})
+});
+
+logoutButton.addEventListener("click", () => {
+    isDemoLoggedIn = false;
+    sessionStorage.removeItem("isDemoLoggedIn");
+
+    loginButton.setAttribute("aria-label", "로그인");
+    loginButton.classList.remove("is_logged_in");
+
+    setAuthOpen(false);
+});
 
 signupForm.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -110,7 +135,7 @@ signupForm.addEventListener("submit", (event) => {
     if(!signupForm.reportValidity()) return;
 
     alert("입력값 검사를 통과했습니다. 아직 회원가입 정보는 저장되지 않았습니다.")
-})
+});
 
 authPanel.addEventListener("animationend", (event) => {
   if(event.target !== authPanel) return;

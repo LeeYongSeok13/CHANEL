@@ -77,7 +77,8 @@
 }
 
 .auth_login, 
-.auth_signup {
+.auth_signup,
+.auth_account {
     margin-top: 48px;
 }
 
@@ -259,13 +260,39 @@
     color: var(--color-gold);
 }
 
+.auth_logout_btn {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 50px;
+    margin-top: 36px;
+    padding: 14px 20px;
+
+    color: var(--color-black);
+    background: var(--color-white);
+    border: 1px solid var(--color-black);
+
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.auth_logout_btn:hover {
+    color: var(--color-white);
+    background: var(--color-black);
+}
+
 @media (max-width: 480px) {
   .auth_panel {
     padding: 22px 20px;
   }
 
   .auth_login
-  .auth_signup {
+  .auth_signup,
+  .auth_account {
     margin-top: 32px;
   }
 
